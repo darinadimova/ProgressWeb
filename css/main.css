@@ -1,4 +1,4 @@
-html,body,ul,a{
+html,body,ul,a,button{
 	margin: 0;
 	padding: 0;
 }
@@ -40,8 +40,27 @@ a{
 	margin-top: 30px;
 }
 
+.searchInput{
+    border:1px solid black;
+    border-radius: 5px;
+    width: 350px;
+    height: 25px;
+    box-shadow: 1px 1px 1px #B4B1B1,
+                2px 2px 2px #BFBABA,
+                3px 3px 3px #DCD8D8,
+                4px 4px 4px #565353;
+
+}
+
 .searchButton{
 	margin-top: 30px;
+    
+}
+
+#submitbutton{
+    background-image: url('../images/iconglass.jpg');
+    width: 40px;
+    height: 40px;
 }
 
 .account{
@@ -222,4 +241,25 @@ a{
 	background-color: #ECE5E5;
 	font-weight: bold;
 	z-index: 999;
+}
+
+.obqva{
+    width: 31.5%;
+    background-color: rgba(255,255,255, 1);
+    float: left;
+    margin-right: 20px;
+}
+
+.section{
+    width: 100%;
+}
+
+.imgobqva{
+    width: 220px;
+    float: right;
+    margin-left: 15px;
+}
+
+.textobqva{
+    text-align: justify;
 }
