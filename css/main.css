@@ -1,4 +1,4 @@
-html,body,ul,a,button{
+html,body,ul,a,button,li{
 	margin: 0;
 	padding: 0;
 }
@@ -15,7 +15,7 @@ a{
 
 #wrapper{
 	margin: 0 auto;
-	width: 80%;
+	width: 81%;
 	height: 100%;
 	background-color: white;
 }
@@ -43,6 +43,7 @@ a{
 .searchInput{
     border:1px solid black;
     border-radius: 5px;
+    float: left;
     width: 350px;
     height: 25px;
     box-shadow: 1px 1px 1px #B4B1B1,
@@ -52,15 +53,12 @@ a{
 
 }
 
-.searchButton{
-	margin-top: 30px;
-    
-}
-
-#submitbutton{
-    background-image: url('../images/iconglass.jpg');
+.submitButton{
+    background:url(../images/rsz_iconglass.jpg) no-repeat center transparent;
     width: 40px;
-    height: 40px;
+    height: 30px;
+    float: left;
+    border: 1px solid rgba(0,0,0,0);
 }
 
 .account{
@@ -244,10 +242,11 @@ a{
 }
 
 .obqva{
-    width: 31.5%;
+    width: 31%;
     background-color: rgba(255,255,255, 1);
     float: left;
-    margin-right: 20px;
+    margin:10px 10px 10px 14px;
+    border: 1px solid black;
 }
 
 .section{
@@ -255,11 +254,31 @@ a{
 }
 
 .imgobqva{
-    width: 220px;
+    max-width: 70%;
     float: right;
     margin-left: 15px;
 }
 
 .textobqva{
     text-align: justify;
+}
+
+.headerobqva{
+    width: 100%;
+}
+
+.obqvifooter{
+    float: right;
+}
+
+.footer{
+    width: 100%;
+    border:1px solid rgb(249,195,87);
+    background-color: white;
+}
+
+.footer a{
+    float: left;
+    margin:20px;
+    color: black;
 }
