@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Домашни Лапички</title>
+	<script type="text/javascript" src="javascript/main.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="icon" type="icon" href="images/rsz_logo2.jpg">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -15,12 +16,24 @@
 		<div class="search">
 			<form method="POST" action="">
 				<input type="search" class="searchInput" placeholder="Search" required>
-				<input type="Submit" value=" "class="submitButton">
+				<input type="image" value=" "class="submitButton" src="" >
 			</form>
 		</div>
 		<div class="account">
-			<a href="#">Login</a>
 			<a href="#">Register</a>
+
+			<a href="#" onclick="loginShow()">Login</a>
+			<div id="loginForm">
+				<form action="" method="POST">
+						<label for="username" class="loginUserName">Потребителско име</label>
+						<input type="text" name="username" class="loginInputs"><br>
+						<label for="password" class="loginPassword">Парола</label>
+						<input type="password" name="password" class="loginInputs"></br>
+						<input type="Submit" class="loginSubmit" value="Влез">
+						<div class="clear"></div>
+				</form>
+			</div>
+			<div id="registerForm"></div>
 		</div>
 		<div class="mainmenu">
 			<ul class="menu1">
@@ -30,7 +43,6 @@
 				<li><a href="">Въпроси</a></li>
 				<li><a href="">За Нас</a></li>
 				<li><a href="">Подкрепа</a></li>
-
 			</ul>
 		</div>
 		<div class="clear"></div>
