@@ -1,0 +1,505 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"re",
+				"required	Attr"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"li",
+				"list-style-type"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"i",
+				"inline"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"word",
+				"word-spacing"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"FON",
+				"font-weight"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"text-de",
+				"text-decoration"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"ta",
+				"target	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 305.0,
+		"last_filter": "view",
+		"selected_items":
+		[
+			[
+				"view",
+				"View In Browser"
+			],
+			[
+				"inser",
+				"Insert Nums"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:  remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"li",
+				"Package Control: List Packages"
+			],
+			[
+				"picke",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package contro",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"upp",
+				"Package Control: Upgrade Package"
+			]
+		],
+		"width": 503.0
+	},
+	"console":
+	{
+		"height": 176.0,
+		"history":
+		[
+			"alert(1);",
+			"ALERT(1)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/ProgressCourses/homepractice.com/HTML.HTML",
+		"/C/ProgressCourses/homepractice.com/JAVA.JS",
+		"/C/ProgressCourses/ProgressWeb/trunk/css/main.css",
+		"/C/ProgressCourses/ProgressWeb/trunk/index.html",
+		"/C/ProgressCourses/ProgressWeb/trunk/images/icon.gif",
+		"/C/ProgressCourses/FinaleTest/css/main.css",
+		"/C/ProgressCourses/FinaleTest/index.html",
+		"/C/ProgressCourses/FinaleTest/javascript/main.js",
+		"/C/ProgressCourses/ddimova.com/marginexample.html",
+		"/C/ProgressCourses/ddimova.com/clicklebutton.html",
+		"/C/ProgressCourses/homepractice.com/NestedListsExercise/transitionex.html",
+		"/C/ProgressCourses/homepractice.com/NestedListsExercise/transition.html",
+		"/C/ProgressCourses/homepractice.com/NestedListsExercise/textshadow.html",
+		"/C/ProgressCourses/homepractice.com/NestedListsExercise/listexercise4.html",
+		"/C/ProgressCourses/ddimova.com/progressexercise.html",
+		"/C/ProgressCourses/ddimova.com/layouthomework.html",
+		"/C/ProgressCourses/ddimova.com/listmenu.html",
+		"/C/ProgressCourses/ddimova.com/layout.html",
+		"/C/ProgressCourses/ddimova.com/pseudoel.html",
+		"/C/ProgressCourses/ddimova.com/pseudoelements.html",
+		"/C/ProgressCourses/ddimova.com/pseudoex.html",
+		"/C/ProgressCourses/ddimova.com/boxing.html",
+		"/C/ProgressCourses/ddimova.com/floatexercise.html",
+		"/C/ProgressCourses/homepractice.com/selfexercise.css",
+		"/C/ProgressCourses/homepractice.com/selfexercise.html",
+		"/C/ProgressCourses/homepractice.com/exmenu.css",
+		"/C/ProgressCourses/homepractice.com/exmenu.html",
+		"/C/ProgressCourses/homepractice.com/LiHomework.html",
+		"/C/ProgressCourses/homepractice.com/LiHomework.css",
+		"/C/ProgressCourses/ddimova.com/fontsizeex.html",
+		"/C/ProgressCourses/ddimova.com/fontsizeex",
+		"/C/ProgressCourses/homepractice.com/test.html",
+		"/C/ProgressCourses/homepractice.com/homework.html",
+		"/C/ProgressCourses/homepractice.com/homework.css",
+		"/C/ProgressCourses/ddimova.com/treeExercise.html",
+		"/C/ProgressCourses/ddimova.com/treeExercise.css",
+		"/C/ProgressCourses/ddimova.com/selectors.css",
+		"/C/ProgressCourses/ddimova.com/Homework/1_Ordered_and_Unordered_lists.html",
+		"/C/ProgressCourses/ddimova.com/index.html",
+		"/C/ProgressCourses/homepractice.com/list1.html",
+		"/C/ProgressCourses/homepractice.com/list1.css",
+		"/C/ProgressCourses/homepractice.com/NestedListsExercise/list1.css",
+		"/C/ProgressCourses/homepractice.com/formexercise.html",
+		"/C/Users/Darina/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Darina/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Darina/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Darina/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/ProgressCourses/homepractice.com/Formex1.html",
+		"/C/ProgressCourses/homepractice.com/NestedListsExercise/Li&img.html",
+		"/C/ProgressCourses/homepractice.com/image/LIexercise2.html",
+		"/C/ProgressCourses/homepractice.com/NestedListsExercise/liexercise8.html",
+		"/C/ProgressCourses/homepractice.com/NestedListsExercise/LIexercise6.html",
+		"/C/ProgressCourses/homepractice.com/NestedListsExercise/liexercise5.html",
+		"/C/ProgressCourses/homepractice.com/NestedListsExercise/DefinitionList.html",
+		"/C/ProgressCourses/homepractice.com/LIexercise7.html",
+		"/C/ProgressCourses/homepractice.com/li9.html",
+		"/C/ProgressCourses/homepractice.com/liexercise8.html",
+		"/C/ProgressCourses/homepractice.com/listexercise.html",
+		"/C/ProgressCourses/homepractice.com/stupidLI.html",
+		"/C/ProgressCourses/homepractice.com/listexercise4.html",
+		"/C/ProgressCourses/ddimova.com/audio&video.html",
+		"/C/ProgressCourses/homepractice.com/iframesExercise.html",
+		"/C/ProgressCourses/homepractice.com/LIexercise6.html",
+		"/C/ProgressCourses/homepractice.com/liexercise5.html",
+		"/C/ProgressCourses/homepractice.com/DefinitionList.html",
+		"/C/ProgressCourses/homepractice.com/LIexercise.html",
+		"/C/ProgressCourses/homepractice.com/documents/Forms.html",
+		"/C/ProgressCourses/homepractice.com/documents/htmlFORMS",
+		"/C/ProgressCourses/ddimova.com/forms.html",
+		"/C/ProgressCourses/ddimova.com/Homework/2_Nested_lists_food.html",
+		"/C/ProgressCourses/ddimova.com/Homework/3_Nested_list_music.html",
+		"/C/ProgressCourses/ddimova.com/Homework/4_Table_cellspan_simple.html",
+		"/C/ProgressCourses/ddimova.com/Homework/5_Table_cellspan_FIFA.html",
+		"/C/ProgressCourses/homepractice.com/article1.html",
+		"/C/Users/Darina/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Darina/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/ProgressCourses/homepractice.com/about.html",
+		"/C/Users/Darina/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/Users/Darina/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/ProgressCourses/homepractice.com/index.html",
+		"/C/ProgressCourses/ddimova.com/Html/about.html",
+		"/C/ProgressCourses/ddimova.com/about.html",
+		"/C/ProgressCourses/ddimova.com/index.html.txt"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 114.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			",\n",
+			"		\n",
+			";\n",
+			"body",
+			"frameborder='no'",
+			"allowfullscreen='true'",
+			"allowtransparency",
+			"allowtransparency='true' ",
+			"allowtransparency",
+			"allowtransparency ",
+			"scrolling='no'",
+			"</b>",
+			"<b>",
+			"b",
+			"></",
+			";\n",
+			"Велико Търново",
+			"ddimova.com",
+			"com",
+			"contact",
+			"US",
+			"></",
+			"\n<",
+			"p",
+			">\n",
+			"strong",
+			"Strong",
+			"strong",
+			">\n",
+			"em",
+			"strong",
+			"title",
+			"nai",
+			"Select",
+			"select",
+			"Select",
+			"select",
+			"Select",
+			"word",
+			"lec"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"allowfullscreen\nallowfullscreen\nallowfullscreen\nallowfullscreen"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 228.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

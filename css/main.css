@@ -251,6 +251,7 @@ a{
 
 .section{
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .imgobqva{
@@ -277,8 +278,54 @@ a{
     background-color: white;
 }
 
-.footer a{
+.footer .socialwrapper{
+    margin: 0 auto;
+    width: 82%;
+    height: 100%;
+    background-color: white;
+}
+
+.footer .social{
+    display: block;
+    float: right;
+}
+
+.social.fb{
+    background:url(../images/socialicons.png) -148px 0;
+    width: 45px;
+    height: 45px;
+}
+
+.social.twitter{
+    background:url(../images/socialicons.png) -240px 0;
+    width: 45px;
+    height: 45px;
+}
+
+.social.google{
+    background:url(../images/socialicons.png) -50px -45px;
+    width: 45px;
+    height: 45px;
+}
+
+.social.instagram{
+    background:url(../images/socialicons.png) -50px 0;
+    width: 45px;
+    height: 45px;
+}
+
+.social.pinterest{
+    background:url(../images/socialicons.png) -243px -45px;
+    width: 45px;
+    height: 45px;
+}
+
+.social.youtube{
+    background:url(../images/socialicons.png) -155px -45px;
+    width: 45px;
+    height: 45px;
+}
+
+.copyright{
     float: left;
-    margin:20px;
-    color: black;
 }
