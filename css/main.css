@@ -1,4 +1,4 @@
-html,body,ul,a,button,li{
+html,body,ul,a,button,li,hr{
 	margin: 0;
 	padding: 0;
 }
@@ -9,8 +9,23 @@ body,html{
 	background-color: #F1EEEE;
 	background-image: url("../images/paw.png");
 }
+
 a{
 	text-decoration: none;
+    color: #578DF9;
+}
+
+a:visited{
+    color: #578DF9;
+}
+
+#overlay{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    z-index: 9988;
+    background-color: rgba(56,56,56,0.5);
+    display:none;
 }
 
 #wrapper{
@@ -36,91 +51,136 @@ a{
 
 .search{
 	float: left;
-	width: 50%;
-	margin-top: 30px;
+	width: 55%;
+	margin-top: 70px;
 }
 
 .searchInput{
-    border:1px solid black;
-    border-radius: 5px;
+    border:1px solid rgbа(91,53,100,0.5);
+    border-radius: 3px 0 0 3px;
+    border-right: 0;
     float: left;
-    width: 350px;
-    height: 25px;
-    box-shadow: 1px 1px 1px #B4B1B1,
-                2px 2px 2px #BFBABA,
-                3px 3px 3px #DCD8D8,
-                4px 4px 4px #565353;
+    width: 50%;
+    padding: 10px 5px;
 
 }
 
 .submitButton{
-    background:url(../images/rsz_iconglass.jpg) no-repeat center transparent;
-    width: 40px;
-    height: 30px;
+    height: 40px;
+    width: 110px;
     float: left;
-    border: 1px solid rgba(0,0,0,0);
+    position: relative;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: rgb(249,195,87);
+}
+
+.searchInput:focus{
+    outline: 0;
+    background: #F3EFEF;
+    box-shadow: 0 0 2px rgba(57,57,57,.8) inset;
+}
+
+.submitButton:before {
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent rgb(249,195,87) transparent;
+    top: 12px;
+    left: -6px;
 }
 
 .account{
 	float: right;
-	width: 27%;
+	width: 22%;
     margin-top: 10px;
     margin-right: 23px;
 }
 
 .account>a{
-    margin-right: 10px;
     float: right;
     font-family: arial;
+    line-height: 60px;
+    text-align: center;
+    width: 115px;
+}
+
+.account>a:hover{
+    background-color: rgb(249,195,87);
 }
 
 #loginForm{
-    width: 20%;
+    width: 21%;
     border:1px solid black;
     position: absolute;
     z-index: 9999;
     display: none;
-    top: 35px;
-    right: 110px;
+    top: 20%;
+    left: 40%;
     background-color: white;
-    background: url("../images/paw.png") -2px -676px;
-    border:1px solid rgb(91,53,100);
+    border-radius: 20px;
+    }
+
+@media only screen and (max-width: 1024px){
+    #loginForm{
+    width: 300px;
+    left: 30%;
+    }
 }
 
 .loginUserName,.loginPassword{
     font-family: arial;
     display: block;
     margin: 20px 0 0 15px;
-    color: rgb(91,53,100);
-    font-weight: bold;
+
 }
 
 .loginInputs{
     width: 70%;
-    margin:10px 10px 0 16px;
+    margin:30px 0px 0 37px;
     border:1px solid black;
+    display: inline-block;
+    padding: 5px;
 
 }
 
 .loginSubmit{
     float: right;
-    margin:35px 128px 20px 0;
+    margin:20px 110px 20px 0;
     border-radius: 7px;
-    width: 45px;
+    width: 90px;
     height: 37px;
     background-color:white;
-    border: 2px solid black;
-    border-top-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-    border-top-left-radius: 1px;
-    border-bottom-right-radius: 1px;
-    font-weight: bold;
+}
+
+#loginForm a{
+    display: block;
+    margin: 15px 0 6px 53px;
+}
+
+.accountHeader{
+    text-align: center;
+    font-family: arial;
+    width: 90%;
+    margin:0 auto;
+    border-bottom: 1px dotted black;
+}
+
+.runningcat{
+    width: 50%;
+    margin:17px 15px 0 80px;
+    float: left;
+}
+
+.hr{
+    border-color: rgb(249,195,87);
     background-color: rgb(249,195,87);
-    color: rgb(91,53,100);
 }
 
 .mainmenu{
-	margin-top: 80px;
+	margin-top: 30px;
 	float: left;
 	width: 79%;
 }
@@ -380,3 +440,17 @@ a{
     float: left;
 }
 
+#arrow{
+    width: 20px;
+    height: 20px;
+    display: none;
+    position: fixed;
+    background-color: black;
+}
+
+#arrow>a{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: block;
+}

@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+<div id="overlay"></div>
+<div id="arrow"><a href="#"></a></div>
 <div id="wrapper">
 	<div id="header">
 		<div id="logo">
@@ -15,8 +17,8 @@
 		</div>
 		<div class="search">
 			<form method="POST" action="">
-				<input type="search" class="searchInput" placeholder="Search" required>
-				<input type="image" value=" "class="submitButton" src="" >
+				<input type="search" class="searchInput" placeholder="Ключова дума..." required>
+				<button class="submitButton">Търси</button>
 			</form>
 		</div>
 		<div class="account">
@@ -24,11 +26,14 @@
 
 			<a href="#" onclick="loginShow()">Login</a>
 			<div id="loginForm">
-				<form action="" method="POST">
-						<label for="username" class="loginUserName">Потребителско име</label>
-						<input type="text" name="username" class="loginInputs"><br>
-						<label for="password" class="loginPassword">Парола</label>
-						<input type="password" name="password" class="loginInputs"></br>
+				<form action="#" method="POST">
+						<img class="runningcat" alt="runningcat" src="images/runningcat.gif">
+						<p class="accountHeader"><span>Влезте с профила си</span></p>
+						<label for="username" class="loginUserName">Потребителско име:</label>
+						<input type="text" name="username" class="loginInputs" placeholder="Вашето име"><br>
+						<label for="password" class="loginPassword">Парола:</label>
+						<input type="password" name="password" class="loginInputs" placeholder="Вашата парола">
+						<a href="#">Забравили сте паралота си?</a>
 						<input type="Submit" class="loginSubmit" value="Влез">
 						<div class="clear"></div>
 				</form>
@@ -36,6 +41,7 @@
 			<div id="registerForm"></div>
 		</div>
 		<div class="mainmenu">
+			<hr class="hr">
 			<ul class="menu1">
 				<li><a href="index.html">Начало</a></li>
 				<li class="cat"><a href="cat.html">Котета</a></li>
@@ -43,6 +49,7 @@
 				<li><a href="">Въпроси</a></li>
 				<li><a href="">За Нас</a></li>
 				<li><a href="">Подкрепа</a></li>
+				<div class="clear"></div>
 			</ul>
 		</div>
 		<div class="clear"></div>
