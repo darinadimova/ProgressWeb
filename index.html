@@ -1,121 +1,251 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Домашни Лапички</title>
-	<script type="text/javascript" src="javascript/main.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link rel="icon" type="icon" href="images/rsz_logo2.jpg">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-<div id="overlay"></div>
-<div id="arrow"><a href="#"></a></div>
-<div id="wrapper">
-	<div id="header">
-		<div id="logo">
-			<img src="images/rzlogo1.jpg" alt="Logo">
-		</div>
-		<div class="search">
-			<form method="POST" action="">
-				<input type="search" class="searchInput" placeholder="Ключова дума..." required>
-				<button class="submitButton">Търси</button>
-			</form>
-		</div>
-		<div class="account">
-			<a href="#">Register</a>
-
-			<a href="#" onclick="loginShow()">Login</a>
-			<div id="loginForm">
-				<form action="#" method="POST">
-						<img class="runningcat" alt="runningcat" src="images/runningcat.gif">
-						<p class="accountHeader"><span>Влезте с профила си</span></p>
-						<label for="username" class="loginUserName">Потребителско име:</label>
-						<input type="text" name="username" class="loginInputs" placeholder="Вашето име"><br>
-						<label for="password" class="loginPassword">Парола:</label>
-						<input type="password" name="password" class="loginInputs" placeholder="Вашата парола">
-						<a href="#">Забравили сте паралота си?</a>
-						<input type="Submit" class="loginSubmit" value="Влез">
-						<div class="clear"></div>
-				</form>
-			</div>
-			<div id="registerForm"></div>
-		</div>
-		<div class="mainmenu">
-			<hr class="hr">
-			<ul class="menu1">
-				<li><a href="index.html">Начало</a></li>
-				<li class="cat"><a href="cat.html">Котета</a></li>
-				<li class="dog"><a href="">Кучета</a></li>
-				<li><a href="">Въпроси</a></li>
-				<li><a href="">За Нас</a></li>
-				<li><a href="">Подкрепа</a></li>
-				<div class="clear"></div>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
-	<!--CAROUSEL HTML STARTS HERE-->
-	<div class="carousel">
-		<div class="carousel">
-	    <div class="carousel-inner">
-	        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-	        <div class="carousel-item">
-	            <img src="images/Fifi.jpg">
-	            <img src="images/Bastian.jpg">
-	            <div class="more1"><i class="fa fa-paw" aria-hidden="true"></i><a href="">Още</a></div>
-	            <div class="more2"><i class="fa fa-paw" aria-hidden="true"></i><a href="">Още</a></div>
-	        </div>
-	        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-	        <div class="carousel-item">
-	            <img src="images/rsz_fiona.jpg">
-	            <img src="images/rsz_kuche.jpg">
-	            <div class="more1"><i class="fa fa-paw" aria-hidden="true"></i><a href="">Още</a></div>
-	            <div class="more2"><i class="fa fa-paw" aria-hidden="true"></i><a href="">Още</a></div>
-	        </div>
-	        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-	        <div class="carousel-item">
-	            <img src="http://fakeimg.pl/2000x800/F90/fff/?text=Carousel">
-	            <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript">
-	            <div class="more1"><i class="fa fa-paw" aria-hidden="true"></i><a href="">Още</a></div>
-	            <div class="more2"><i class="fa fa-paw" aria-hidden="true"></i><a href="">Още</a></div>
-	        </div>
-	        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-	        <label for="carousel-2" class="carousel-control next control-1">›</label>
-	        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-	        <label for="carousel-3" class="carousel-control next control-2">›</label>
-	        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-	        <label for="carousel-1" class="carousel-control next control-3">›</label>
-	        <ol class="carousel-indicators">
-	            <li>
-	                <label for="carousel-1" class="carousel-bullet">•</label>
-	            </li>
-	            <li>
-	                <label for="carousel-2" class="carousel-bullet">•</label>
-	            </li>
-	            <li>
-	                <label for="carousel-3" class="carousel-bullet">•</label>
-	            </li>
-	        </ol>
-	    </div>
-		</div>
-	</div>
-	<!--CAROUSEL HTML ENDS HERE-->
-	<div class="section">
-	</div>
-	<div class="footer">
-		<div class="socialwrapper">
-			<p class="copyright">Home Paws organization © 2016 | All Rights Reserved</p>
-			<a href=""><span class="social youtube"></span></a>
-			<a href=""><span class="social pinterest"></span></a>
-			<a href=""><span class="social instagram"></span></a>
-			<a href=""><span class="social google"></span></a>
-			<a href=""><span class="social twitter"></span></a>
-			<a href=""><span class="social fb"></span></a>
-			<div class="clear"></div>
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-
-</body>
+  <head>
+    <title>Домашни Лапички
+    </title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="javascript/main.js">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="icon" type="image/jpg" href="images/tablogo.jpg">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div id="overlay" onclick="hideForm()">
+    </div>
+    <div id="arrow">
+      <a href="#">
+      </a>
+    </div>
+    <div id="wrapper">
+      <div id="header">
+        <div id="logo">
+          <img src="images/mainlogo.jpg" alt="Logo">
+        </div>
+        <div class="search">
+          <form method="POST" action="#">
+            <input type="search" class="searchInput" placeholder="Ключова дума..." required>
+            <button class="submitButton">Търси
+            </button>
+          </form>
+        </div>
+        <div class="account">
+          <a href="#" onclick="registerShow()">Register
+          </a>
+          <a href="#" onclick="loginShow()">Login
+          </a>
+          <div id="loginForm">
+          	<span onclick="hideForm()">X</span>
+            <form action="#" method="POST">
+              <img class="runningcat" alt="runningcat" src="images/runningcat.gif">
+              <p class="accountHeader">
+                <span>Влезте с профила си
+                </span>
+              </p>
+              <label for="username" class="loginUserName">Потребителско име:
+              </label>
+              <input type="text" name="username" class="loginInputs" placeholder="Вашето име">
+              <label for="password" class="loginPassword">Парола:
+              </label>
+              <input type="password" name="password" class="loginInputs" placeholder="Вашата парола">
+              <a href="#">Забравили сте паралота си?
+              </a>
+              <input type="Submit" class="loginSubmit" value="Влез">
+              <div class="clear">
+              </div>
+            </form>
+          </div>
+          <div id="registerForm">
+          	<span onclick="hideform()">X</span>
+            <form action="#" method="POST">
+              <img class="runningcat" alt="runningcat" src="images/runningcat.gif">
+              <p class="accountHeader">
+                <span>Регистрация
+                </span>
+              </p>
+              <h4>Въведете Име и Фамилия
+              </h4>
+              <label for="username" class="registerUserName">Име:
+              </label>
+              <input type="text" class="loginUserName registerInputs" name="username" placeholder="Въведете Вашето име">
+              <label for="name" class="loginUserName" name="surname">Фамилия:
+              </label>
+              <input type="text" class="loginUserName registerInputs" name="surname" placeholder="Въведете Вашата Фамилия">
+              <h4>
+                <span>Въведете емайл и парола
+                </span>
+              </h4>
+              <label for="email" class="registerEmail">Емайл адрес:
+              </label>
+              <input type="email" name="email" placeholder="Въведете емайл" class="registerInputs ">
+              <label for="email" class="registerConfirmEmail">
+              </label>
+              <input type="email" placeholder="Потвърдете емайл" class="registerInputs">
+              <label for="password" class="registerPassword">Парола:
+              </label>
+              <input class="registerInputs" name="password" type="password" placeholder="Въведете парола">
+              <label for="password" class="registerRePassword">
+              </label>
+              <input type="password" name="password" class="registerInputs" placeholder="Потвърдете Вашата парола">
+              <input type="Submit" class="registerSubmit" value="Влез">
+              <div class="clear">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="mainmenu">
+          <hr class="hr">
+          <ul class="menu1">
+            <li>
+              <a href="index.html">Начало
+              </a>
+            </li>
+            <li class="cat">
+              <a href="cat.html">Котета
+              </a>
+            </li>
+            <li class="dog">
+              <a href="">Кучета
+              </a>
+            </li>
+            <li>
+              <a href="">Въпроси
+              </a>
+            </li>
+            <li>
+              <a href="">За Нас
+              </a>
+            </li>
+            <li>
+              <a href="">Подкрепа
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="clear">
+        </div>
+      </div>
+      <!--CAROUSEL HTML STARTS HERE-->
+      <div class="carousel">
+        <div class="carousel">
+          <div class="carousel-inner">
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item">
+              <img src="images/Fifi.jpg">
+              <img src="images/Bastian.jpg">
+              <div class="more1">
+                <i class="fa fa-paw" aria-hidden="true">
+                </i>
+                <a href="">Още
+                </a>
+              </div>
+              <div class="more2">
+                <i class="fa fa-paw" aria-hidden="true">
+                </i>
+                <a href="">Още
+                </a>
+              </div>
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+              <img src="images/rsz_fiona.jpg">
+              <img src="images/rsz_kuche.jpg">
+              <div class="more1">
+                <i class="fa fa-paw" aria-hidden="true">
+                </i>
+                <a href="">Още
+                </a>
+              </div>
+              <div class="more2">
+                <i class="fa fa-paw" aria-hidden="true">
+                </i>
+                <a href="">Още
+                </a>
+              </div>
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+              <img src="http://fakeimg.pl/2000x800/F90/fff/?text=Carousel">
+              <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript">
+              <div class="more1">
+                <i class="fa fa-paw" aria-hidden="true">
+                </i>
+                <a href="">Още
+                </a>
+              </div>
+              <div class="more2">
+                <i class="fa fa-paw" aria-hidden="true">
+                </i>
+                <a href="">Още
+                </a>
+              </div>
+            </div>
+            <label for="carousel-3" class="carousel-control prev control-1">‹
+            </label>
+            <label for="carousel-2" class="carousel-control next control-1">›
+            </label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹
+            </label>
+            <label for="carousel-3" class="carousel-control next control-2">›
+            </label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹
+            </label>
+            <label for="carousel-1" class="carousel-control next control-3">›
+            </label>
+            <ol class="carousel-indicators">
+              <li>
+                <label for="carousel-1" class="carousel-bullet">•
+                </label>
+              </li>
+              <li>
+                <label for="carousel-2" class="carousel-bullet">•
+                </label>
+              </li>
+              <li>
+                <label for="carousel-3" class="carousel-bullet">•
+                </label>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!--CAROUSEL HTML ENDS HERE-->
+      <div class="section">
+      </div>
+      <div class="footer">
+        <div class="socialwrapper">
+          <p class="copyright">Home Paws Organization © 2016 | All Rights Reserved
+          </p>
+          <a href="">
+            <span class="social youtube">
+            </span>
+          </a>
+          <a href="">
+            <span class="social pinterest">
+            </span>
+          </a>
+          <a href="">
+            <span class="social instagram">
+            </span>
+          </a>
+          <a href="">
+            <span class="social google">
+            </span>
+          </a>
+          <a href="">
+            <span class="social twitter">
+            </span>
+          </a>
+          <a href="">
+            <span class="social fb">
+            </span>
+          </a>
+          <div class="clear">
+          </div>
+        </div>
+        <div class="clear">
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
