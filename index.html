@@ -7,7 +7,7 @@
     <script type="text/javascript" src="javascript/main.js">
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="icon" type="image/jpg" href="images/tablogo.jpg">
+    <link rel="icon" type="image/jpg" href="images/tabicon.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
@@ -34,31 +34,36 @@
           </a>
           <a href="#" onclick="loginShow()">Login
           </a>
+          <!-- LOGIN FORM GOES HERE -->
           <div id="loginForm">
-          	<span onclick="hideForm()">X</span>
+            <span onclick="hideForm()">X
+            </span>
             <form action="#" method="POST">
-              <img class="runningcat" alt="runningcat" src="images/runningcat.gif">
+              <img class="runningCat" alt="runningcat" src="images/runningcat.gif">
               <p class="accountHeader">
                 <span>Влезте с профила си
                 </span>
               </p>
-              <label for="username" class="loginUserName">Потребителско име:
+              <label for="nameOfUser" class="loginUserName">Потребителско име:
               </label>
-              <input type="text" name="username" class="loginInputs" placeholder="Вашето име">
-              <label for="password" class="loginPassword">Парола:
+              <input type="text" id="nameOfUser" name="nameOfUser" class="loginInputs" placeholder="Вашето име" required>
+              <label for="loginPassword" class="loginPassword">Парола:
               </label>
-              <input type="password" name="password" class="loginInputs" placeholder="Вашата парола">
-              <a href="#">Забравили сте паралота си?
+              <input type="password" id="loginPassword" name="password" class="loginInputs" placeholder="Вашата парола" required>
+              <a href="#" onclick="forgottenPasswordShow()"> Забравили сте паралота си?
               </a>
               <input type="Submit" class="loginSubmit" value="Влез">
               <div class="clear">
               </div>
             </form>
           </div>
+          <!-- LOGIN FORM ENDS HERE -->
+          <!-- REGISTER FORM GOES HERE -->
           <div id="registerForm">
-          	<span onclick="hideform()">X</span>
+            <span onclick="hideForm()">X
+            </span>
             <form action="#" method="POST">
-              <img class="runningcat" alt="runningcat" src="images/runningcat.gif">
+              <img class="runningCat" alt="runningcat" src="images/runningcat.gif">
               <p class="accountHeader">
                 <span>Регистрация
                 </span>
@@ -67,33 +72,52 @@
               </h4>
               <label for="username" class="registerUserName">Име:
               </label>
-              <input type="text" class="loginUserName registerInputs" name="username" placeholder="Въведете Вашето име">
-              <label for="name" class="loginUserName" name="surname">Фамилия:
+              <input type="text" class="loginUserName registerInputs" id="username" name="username" placeholder="Въведете Вашето име" required>
+              <label for="surname" class="loginUserName">Фамилия:
               </label>
-              <input type="text" class="loginUserName registerInputs" name="surname" placeholder="Въведете Вашата Фамилия">
+              <input type="text" class="loginUserName registerInputs" id="surname" name="surname" placeholder="Въведете Вашата Фамилия" required>
               <h4>
                 <span>Въведете емайл и парола
                 </span>
               </h4>
               <label for="email" class="registerEmail">Емайл адрес:
               </label>
-              <input type="email" name="email" placeholder="Въведете емайл" class="registerInputs ">
-              <label for="email" class="registerConfirmEmail">
+              <input type="email" id="email" name="email" placeholder="Въведете емайл" class="registerInputs" required>
+              <label for="emailAddress" class="registerConfirmEmail">
               </label>
-              <input type="email" placeholder="Потвърдете емайл" class="registerInputs">
-              <label for="password" class="registerPassword">Парола:
+              <input type="email" placeholder="Потвърдете емайл" id="emailAddress" class="registerInputs" required>
+              <label for="keyword" class="registerPassword">Парола:
               </label>
-              <input class="registerInputs" name="password" type="password" placeholder="Въведете парола">
-              <label for="password" class="registerRePassword">
+              <input class="registerInputs" id="keyword" name="password" type="password" placeholder="Въведете парола" required>
+              <label for="registerPassword" class="registerPassword">
               </label>
-              <input type="password" name="password" class="registerInputs" placeholder="Потвърдете Вашата парола">
+              <input type="password" id="registerPassword" name="password" class="registerInputs" placeholder="Потвърдете Вашата парола" required>
               <input type="Submit" class="registerSubmit" value="Влез">
-              <div class="clear">
-              </div>
             </form>
           </div>
+          <!-- REGISTER FORM ENDS HERE -->
+          <div class="clear">
+          </div>
+          <!-- FORGOTTEN PASSWORD FORM GOES HERE -->
+          <div id="forgottenPasswordForm">
+            <span onclick="hideForm()">X
+            </span>
+            <form action="#" method="POST">
+              <img class="runningCat" alt="runningcat" src="images/runningcat.gif">
+              <p class="accountHeader">
+                <span>Забравенa парола
+                </span>
+              </p>
+              <label for="forgottenPassword" class="forgottenPassword">Въведете Емайл адрес:
+              </label>
+              <input type="email" id="forgottenPassword" class="forgottenPasswordInputs" name="forgottenPassword" placeholder="Въведете емайл адрес" required>
+              <input type="Submit" class="forgottenPasswordSubmit" value="Изпрати" onsubmit="msgSend()">
+            </form>
+          </div>
+          <!-- FORGOTTEN PASSWORD ENDS HERE -->
         </div>
-        <div class="mainmenu">
+        <!-- MAIN MENU GOES HERE -->
+        <div class="mainMenu">
           <hr class="hr">
           <ul class="menu1">
             <li>
@@ -105,34 +129,35 @@
               </a>
             </li>
             <li class="dog">
-              <a href="">Кучета
+              <a href="dog.html">Кучета
               </a>
             </li>
             <li>
-              <a href="">Въпроси
+              <a href="#">Въпроси
               </a>
             </li>
             <li>
-              <a href="">За Нас
+              <a href="#">За Нас
               </a>
             </li>
             <li>
-              <a href="">Подкрепа
+              <a href="#">Подкрепа
               </a>
             </li>
           </ul>
         </div>
+        <!-- MAIN MENU ENDS HERE -->
         <div class="clear">
         </div>
       </div>
-      <!--CAROUSEL HTML STARTS HERE-->
+      <!--CAROUSEL HTML GOES HERE-->
       <div class="carousel">
         <div class="carousel">
           <div class="carousel-inner">
             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
             <div class="carousel-item">
-              <img src="images/Fifi.jpg">
-              <img src="images/Bastian.jpg">
+              <img src="images/Fifi.jpg" alt="Fifi">
+              <img src="images/Bastian.jpg" alt="Bastian">
               <div class="more1">
                 <i class="fa fa-paw" aria-hidden="true">
                 </i>
@@ -148,8 +173,8 @@
             </div>
             <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item">
-              <img src="images/rsz_fiona.jpg">
-              <img src="images/rsz_kuche.jpg">
+              <img src="images/rsz_fiona.jpg" alt="fiona">
+              <img src="images/rsz_kuche.jpg" alt="kuche">
               <div class="more1">
                 <i class="fa fa-paw" aria-hidden="true">
                 </i>
@@ -165,8 +190,8 @@
             </div>
             <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item">
-              <img src="http://fakeimg.pl/2000x800/F90/fff/?text=Carousel">
-              <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript">
+              <img src="images/patata.jpg" alt="patata">
+              <img src="images/sladur.jpg" alt="kucheslad">
               <div class="more1">
                 <i class="fa fa-paw" aria-hidden="true">
                 </i>
@@ -212,31 +237,54 @@
       <!--CAROUSEL HTML ENDS HERE-->
       <div class="section">
       </div>
+      <div id="wrappSection">
+        <div class="subMenuImg">
+          <a href="#">
+            <span>Осинови Животинка
+            </span>
+            <img src="images/catdog.jpg" alt="catDog">
+          </a>
+        </div>
+        <div class="subMenuImg">
+          <a href="#">
+            <span>Стани приемен стопанин
+            </span>
+            <img src="images/volunter.jpg" alt="volunter">
+          </a>
+        </div>
+        <div class="subMenuImg">
+          <a href="#">
+            <span>Евенти с Животинки
+            </span>
+            <img src="images/petevent.jpg" alt="petEvent">
+          </a>
+        </div>
+      </div>
       <div class="footer">
-        <div class="socialwrapper">
-          <p class="copyright">Home Paws Organization © 2016 | All Rights Reserved
+        <div class="socialWrapper">
+          <p class="copyRight">Home Paws Organization © 2016 | All Rights Reserved
           </p>
-          <a href="">
+          <a href="#">
             <span class="social youtube">
             </span>
           </a>
-          <a href="">
+          <a href="#">
             <span class="social pinterest">
             </span>
           </a>
-          <a href="">
+          <a href="#">
             <span class="social instagram">
             </span>
           </a>
-          <a href="">
+          <a href="#">
             <span class="social google">
             </span>
           </a>
-          <a href="">
+          <a href="#">
             <span class="social twitter">
             </span>
           </a>
-          <a href="">
+          <a href="#">
             <span class="social fb">
             </span>
           </a>

@@ -1,12 +1,21 @@
 function loginShow(){
 	document.getElementById('registerForm').style.display="none";
 	document.getElementById('loginForm').style.display="block";
+	document.getElementById('forgottenPasswordForm').style.display="none";
 	document.getElementById('overlay').style.display="block";
 }
 
 function registerShow(){
 	document.getElementById('registerForm').style.display="block";
 	document.getElementById('loginForm').style.display="none";
+	document.getElementById('forgottenPasswordForm').style.display="none";
+	document.getElementById('overlay').style.display="block";
+}
+
+function forgottenPasswordShow(){
+	document.getElementById('registerForm').style.display="none";
+	document.getElementById('loginForm').style.display="none";
+	document.getElementById('forgottenPasswordForm').style.display="block";
 	document.getElementById('overlay').style.display="block";
 }
 
@@ -14,6 +23,11 @@ function hideForm(){
 	document.getElementById('overlay').style.display="none";
 	document.getElementById('loginForm').style.display="none";
 	document.getElementById('registerForm').style.display="none";
+	document.getElementById('forgottenPasswordForm').style.display="none";
+}
+
+function msgSend(){
+	document.getElementById('forgottenPasswordForm').innerHTML="Съобщението беше изпратено усмешно!Нова парола беше изпратена на посочения емайл.";
 }
 
 document.addEventListener("scroll", function() {
