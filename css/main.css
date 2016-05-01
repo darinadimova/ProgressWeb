@@ -1,18 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
 html,body,ul,a,button,li,hr{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body,html{
-	width: 100%;
-	height: 100%;
-	background-color: #F1EEEE;
-	background-image: url("../images/paw.png");
+    width: 100%;
+    height: 100%;
+    background-color: #F1EEEE;
+    background-image: url("../images/paw.png");
 }
 
 a{
-	text-decoration: none;
+    text-decoration: none;
     color: #578DF9;
 }
 
@@ -30,29 +30,29 @@ a:visited{
 }
 
 #wrapper{
-	margin: 0 auto;
-	width: 81%;
-	height: 100%;
-	background-color: white;
+    margin: 0 auto;
+    width: 81%;
+    height: 100%;
+    background-color: white;
 }
 
 #header{
-	width: 100%;
-	border:1px solid rgb(249,195,87);
+    width: 100%;
+    border:1px solid rgb(249,195,87);
 }
 
 .clear{
-	clear: both;
+    clear: both;
 }
 
 #logo{
-	float: left;
-	width: 21%;
+    float: left;
+    width: 21%;
 }
 
 .search{
-	float: left;
-	width: 56%;
+    float: left;
+    width: 56%;
 }
 
 .searchInput{
@@ -94,10 +94,10 @@ a:visited{
 }
 
 .account{
-	float: left;
+    float: left;
     margin-top: 10px;
     margin-right: 23px;
-	width: 24%;
+    width: 24%;
 }
 
 .account>a{
@@ -114,16 +114,24 @@ a:visited{
 }
 
 /*LOGIN , REGISTER , FORGOTTEN PASSWORD CSS*/
+
 #loginForm{
-    display: none;
     position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 21%;
-    border:1px solid black;
-    border-radius: 20px;
-    background-color: white;
+    display: none;
+    top: 9%;
+    left: 5%;
+    right: 0;
+    width: 90%;
+    height: 70%;
+    background-color:rgba(255, 255, 255, 0.9);
     z-index: 9999;
+}
+
+#loginForm img,#registerForm img{
+    float: right;
+    width: 35%;
+    margin-top: 9%;
+    margin-right: 5%;
 }
 
 @media only screen and (max-width: 1024px){
@@ -133,35 +141,44 @@ a:visited{
     }
 }
 
-.loginUserName,.loginPassword,.registerUserName,
-.registerInputs,.registerPassword,.registerEmail,
-.forgottenPassword,.forgottenPasswordInputs{
+.loginUserName,.loginPassword,
+.forgottenPassword{
     display: block;
-    margin: 20px 0 0 15px;
+    margin-top: 3%;
+    margin-right: 0;
+    margin-left: 20%;
+    margin-bottom: 0; 
     font-family: arial;
 }
 
 .loginInputs,.registerInputs{
     display: inline-block;
-    margin:30px 0px 0 37px;
+    margin:30px 0px 0 20%;
     padding: 5px;
-    width: 70%;
+    width: 30%;
     border:1px solid black;
 }
 
 .loginSubmit{
-    float: right;
-    width: 90px;
-    height: 37px;
-    margin:20px 110px 20px 0;
-    border-radius: 7px;
-    background-color:white;
-    cursor: pointer;
+    display: block;
+    border: #ffffff solid 1px;
+    background-image: url(../images/nav_on.png);
+    background-position: top;
+    background-repeat: repeat-x;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    width: 110px;
+    padding: 8px 0px;
+    text-decoration: none;
+    background-color: #cf9c36;
+    margin-left: 40%;
+    margin-top: 3%;
 }
 
 #loginForm a{
     display: block;
-    margin: 15px 0 6px 53px;
+    margin: 15px 0 6px 35%;
 }
 
 #loginForm>span,#registerForm>span,#forgottenPasswordForm>span{
@@ -172,17 +189,11 @@ a:visited{
 }
 
 .accountHeader{
-    width: 90%;
-    margin:0 auto;
     text-align: center;
     font-family: arial;
     border-bottom: 1px dotted black;
-}
-
-.runningCat{
-    float: left;
-    width: 50%;
-    margin:17px 15px 0 80px;
+    margin-right: 40%;
+    margin-top: 4%;
 }
 
 .hr{
@@ -191,25 +202,42 @@ a:visited{
 }
 
 #registerForm{
-    display: none;
     position: absolute;
-    top: 8%;
-    left: 40%;
-    width: 27%;
-    border:1px solid black;
-    border-radius: 20px;
-    background-color: white;
+    top: 5%;
+    left: 5%;
+    right: 0;
+    width: 90%;
+    height: 90%;
+    background-color:rgba(255, 255, 255, 0.9);
     z-index: 9999;
+    display: none;
+}
+
+.registerUserName,
+.registerInputs,.registerPassword,.registerEmail{
+    display: block;
+    margin-top: 1%;
+    margin-right: 0;
+    margin-left: 20%;
+    margin-bottom: 0; 
+    font-family: arial;
 }
 
 .registerSubmit{
-    float: right;
-    margin:20px 150px 20px 0;
-    width: 90px;
-    height: 37px;
-    border-radius: 7px;
-    background-color:white;
-    cursor: pointer;
+    display: block;
+    border: #ffffff solid 1px;
+    background-image: url(../images/nav_on.png);
+    background-position: top;
+    background-repeat: repeat-x;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    width: 110px;
+    padding: 8px 0px;
+    text-decoration: none;
+    background-color: #cf9c36;
+    margin-left: 40%;
+    margin-top: 3%;
 }
 
 @media only screen and (max-width: 1024px){
@@ -220,38 +248,53 @@ a:visited{
 }
 
 #forgottenPasswordForm{
-    display: none;
     position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 21%;
-    height: 360px;
-    border:1px solid black;
-    border-radius: 20px;
-    background-color: white;
+    top: 9%;
+    left: 5%;
+    right: 0;
+    width: 90%;
+    height: 60%;
+    background-color:rgba(255, 255, 255, 0.9);
     z-index: 9999;
+    display: none;
 }
 
 .forgottenPasswordInputs{
     display: inline-block;
-    width: 70%;
-    margin:30px 0px 0 16px;
+    width: 40%;
+    margin:30px 0px 0 10%;
     padding: 5px;
     border:1px solid black;
+    display: block; 
+    font-family: arial;
 }
 
 .forgottenPasswordSubmit{
+    display: block;
+    border: #ffffff solid 1px;
+    background-image: url(../images/nav_on.png);
+    background-position: top;
+    background-repeat: repeat-x;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    width: 110px;
+    padding: 8px 0px;
+    text-decoration: none;
+    background-color: #cf9c36;
+    margin-left: 40%;
+    margin-top: 3%;
+}
+
+#forgottenPasswordForm img{
+    width: 35%;
+    margin-top: 5%;
+    margin-right: 5%;
     float: right;
-    width: 90px;
-    height: 37px;
-    margin:30px 110px 20px 0;
-    border-radius: 7px;
-    background-color:white;
-    cursor: pointer;
 }
 
 form>h4{
-    margin-left: 9px;
+    margin-left: 20%;
 }
 
 /*END OF LOGIN,REGISTER AND FORGOTTEN PASSWORD ENDS HERE*/
@@ -259,36 +302,36 @@ form>h4{
 .mainMenu{
     float: left;
     width: 79%;
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 .menu1>li{
-	float: left;
+    float: left;
     width: 150px;
     text-align: center;
     list-style-type: none;
-    line-height: 60px;	
+    line-height: 60px;  
 }
 
 .menu1 li>a{
     display: block;
-	color: black;
-	font-size: 20px;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+    font-size: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .menu1 a:hover{
-	background-color: rgb(249,195,87);
+    background-color: rgb(249,195,87);
 }
 
 .menu1 li.dog a:hover{
-	background-color: rgb(91,53,100);
-	color: rgb(249,195,87);
+    background-color: rgb(91,53,100);
+    color: rgb(249,195,87);
 }
 
 .menu1 li.cat a:hover{
     color: rgb(249,195,87);
-	background-color: rgb(91,53,100);
+    background-color: rgb(91,53,100);
 }
 
 
