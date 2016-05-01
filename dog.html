@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="icon" type="image/jpg" href="images/tabicon.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
     <script type="text/javascript" src="javascript/main.js">
     </script>
   </head>
@@ -20,17 +21,10 @@
     <div id="wrapper">
       <div id="header">
         <div id="logo">
-          <img src="images/mainlogo.jpg" alt="Logo">
+          <a href="index.html">
+            <img src="images/mainlogo.jpg" alt="Logo">
+          </a>
         </div>
-        <!-- SEARCH GOES HERE -->
-        <div class="search">
-          <form method="POST" action="#">
-            <input type="search" class="searchInput" placeholder="Ключова дума..." required>
-            <button class="submitButton">Търси
-            </button>
-          </form>
-        </div>
-        <!-- SEARCH ENDS HERE -->
         <div class="account">
           <a href="#" onclick="registerShow()">Register
           </a>
@@ -118,6 +112,18 @@
           </div>
           <!-- FORGOTTEN PASSWORD ENDS HERE -->
         </div>
+        <div class="search">
+          <form method="POST" action="#">
+            <input type="search" class="searchInput" placeholder="Ключова дума..." required>
+            <button class="submitButton">Търси
+            </button>
+          </form>
+        </div>
+        <div class="vetImg">
+          <a href="http://dobrohrumvane.com/">
+            <img src="images/dobrohrumvane.jpg" alt="dobrohrumvane">
+          </a>
+        </div>
         <!-- MAIN MENU STARTS FROM HERE -->
         <div class="mainMenu">
           <hr class="hr">
@@ -139,7 +145,7 @@
               </a>
             </li>
             <li>
-              <a href="">За Нас
+              <a href="forUs.html">За Нас
               </a>
             </li>
             <li>

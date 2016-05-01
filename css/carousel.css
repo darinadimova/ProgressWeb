@@ -1,0 +1,124 @@
+/*CAROUSEL CSS GOES HERE*/
+.carousel {
+    position: relative;
+    margin-top: 26px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    float:left;
+    height: auto;
+    max-width: 50%;
+}
+
+.carousel-control {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 35px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    display: block;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;    
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+.more1{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    color: rgb(91,53,100);
+    background-color: #ECE5E5;
+    z-index: 999;
+}
+
+.more2{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    color: rgb(91,53,100);
+    background-color: #ECE5E5;
+    font-weight: bold;
+    z-index: 999;
+}
+
+/*CAROUSEL CSS ENDS HERE*/

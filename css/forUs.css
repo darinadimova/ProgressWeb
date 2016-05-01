@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha);
+
+#aboutUsSection{
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contacts{
+	width: 30%;
+	height: 100%;
+	float: left;
+	margin-right: 4%;
+  margin-left: 3%;
+}
+
+.map{
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+
+.map iframe{
+	  left:0;
+    top:0;
+    width:100%;
+    position:relative;
+}
+
+.contacts span,.forUsInfo span:nth-of-type(1){
+	display: block;
+	font-family: 'Neucha', cursive;
+	font-size: 1.8em;
+}
+
+.contacts p{
+	font-family: 'Neucha', cursive;
+	font-size: 1.1em;
+}
+
+.forUsInfo{
+    float: left;
+    font-family: 'Neucha', cursive;
+    background-color:rgba(255, 195, 87, 0.88);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.1em;
+}
