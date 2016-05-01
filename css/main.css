@@ -20,12 +20,12 @@ a:visited{
 }
 
 #overlay{
+    display:none;
     position: fixed;
     width: 100%;
     height:100%;
-    z-index: 9988;
     background-color: rgba(56,56,56,0.5);
-    display:none;
+    z-index: 9988;
 }
 
 #wrapper{
@@ -56,22 +56,22 @@ a:visited{
 }
 
 .searchInput{
-    border:1px solid rgbа(91,53,100,0.5);
-    border-radius: 3px 0 0 3px;
-    border-right: 0;
     float: left;
     width: 50%;
     padding: 10px 5px;
+    border:1px solid rgbа(91,53,100,0.5);
+    border-radius: 3px 0 0 3px;
+    border-right: 0;
 }
 
 .submitButton{
+    position: relative;
+    float: left;
+    padding: 0;
     height: 40px;
     width: 110px;
-    float: left;
-    position: relative;
-    cursor: pointer;
     border: 0;
-    padding: 0;
+    cursor: pointer;
     background-color: rgb(249,195,87);
 }
 
@@ -93,36 +93,36 @@ a:visited{
 
 .account{
 	float: right;
-	width: 22%;
     margin-top: 10px;
     margin-right: 23px;
+	width: 22%;
 }
 
 .account>a{
     float: right;
-    font-family: arial;
+    width: 115px;
     line-height: 60px;
     text-align: center;
-    width: 115px;
+    font-family: arial;    
 }
 
 .account>a:hover{
-    background-color: rgb(249,195,87);
     text-decoration: underline;
+    background-color: rgb(249,195,87);
 }
 
 /*LOGIN , REGISTER , FORGOTTEN PASSWORD CSS*/
 #loginForm{
-    width: 21%;
-    border:1px solid black;
-    position: absolute;
-    z-index: 9999;
     display: none;
+    position: absolute;
     top: 20%;
     left: 40%;
-    background-color: white;
+    width: 21%;
+    border:1px solid black;
     border-radius: 20px;
-    }
+    background-color: white;
+    z-index: 9999;
+}
 
 @media only screen and (max-width: 1024px){
     #loginForm{
@@ -134,27 +134,25 @@ a:visited{
 .loginUserName,.loginPassword,.registerUserName,
 .registerInputs,.registerPassword,.registerEmail,
 .forgottenPassword,.forgottenPasswordInputs{
-    font-family: arial;
     display: block;
     margin: 20px 0 0 15px;
-
+    font-family: arial;
 }
 
 .loginInputs,.registerInputs{
-    width: 70%;
-    margin:30px 0px 0 37px;
-    border:1px solid black;
     display: inline-block;
+    margin:30px 0px 0 37px;
     padding: 5px;
-
+    width: 70%;
+    border:1px solid black;
 }
 
 .loginSubmit{
     float: right;
-    margin:20px 110px 20px 0;
-    border-radius: 7px;
     width: 90px;
     height: 37px;
+    margin:20px 110px 20px 0;
+    border-radius: 7px;
     background-color:white;
     cursor: pointer;
 }
@@ -172,17 +170,17 @@ a:visited{
 }
 
 .accountHeader{
-    text-align: center;
-    font-family: arial;
     width: 90%;
     margin:0 auto;
+    text-align: center;
+    font-family: arial;
     border-bottom: 1px dotted black;
 }
 
 .runningCat{
+    float: left;
     width: 50%;
     margin:17px 15px 0 80px;
-    float: left;
 }
 
 .hr{
@@ -191,23 +189,23 @@ a:visited{
 }
 
 #registerForm{
-    width: 27%;
-    border:1px solid black;
-    position: absolute;
-    z-index: 9999;
     display: none;
+    position: absolute;
     top: 8%;
     left: 40%;
-    background-color: white;
+    width: 27%;
+    border:1px solid black;
     border-radius: 20px;
+    background-color: white;
+    z-index: 9999;
 }
 
 .registerSubmit{
     float: right;
     margin:20px 150px 20px 0;
-    border-radius: 7px;
     width: 90px;
     height: 37px;
+    border-radius: 7px;
     background-color:white;
     cursor: pointer;
 }
@@ -220,61 +218,61 @@ a:visited{
 }
 
 #forgottenPasswordForm{
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 40%;
     width: 21%;
     height: 360px;
     border:1px solid black;
-    position: absolute;
-    z-index: 9999;
-    display: none;
-    top: 20%;
-    left: 40%;
-    background-color: white;
     border-radius: 20px;
-    }
+    background-color: white;
+    z-index: 9999;
+}
 
-    .forgottenPasswordInputs{
+.forgottenPasswordInputs{
+    display: inline-block;
     width: 70%;
     margin:30px 0px 0 16px;
-    border:1px solid black;
-    display: inline-block;
     padding: 5px;
-    }
+    border:1px solid black;
+}
 
 .forgottenPasswordSubmit{
     float: right;
-    margin:30px 110px 20px 0;
-    border-radius: 7px;
     width: 90px;
     height: 37px;
+    margin:30px 110px 20px 0;
+    border-radius: 7px;
     background-color:white;
     cursor: pointer;
-    }
+}
 
 form>h4{
     margin-left: 9px;
-    }
+}
+
 /*END OF LOGIN,REGISTER AND FORGOTTEN PASSWORD ENDS HERE*/
 /*MAIN MENU CSS GOES HERE*/
 .mainMenu{
+    float: left;
+    width: 79%;
 	margin-top: 30px;
-	float: left;
-	width: 79%;
 }
 
 .menu1>li{
 	float: left;
-	list-style-type: none;
-	width: 150px;
-	line-height: 60px;
-	text-align: center;
+    width: 150px;
+    text-align: center;
+    list-style-type: none;
+    line-height: 60px;	
 }
 
 .menu1 li>a{
+    display: block;
 	color: black;
 	font-size: 20px;
-	/*font-weight: bold;*/
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	display: block;
 }
 
 .menu1 a:hover{
@@ -287,15 +285,16 @@ form>h4{
 }
 
 .menu1 li.cat a:hover{
+    color: rgb(249,195,87);
 	background-color: rgb(91,53,100);
-	color: rgb(249,195,87);
 }
+
 /*MAIN MENU CSS ENDS HERE*/
 /*CAROUSEL CSS GOES HERE*/
 .carousel {
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
 }
 
 .carousel-inner {
@@ -323,22 +322,21 @@ form>h4{
 }
 
 .carousel-control {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
     display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
     position: absolute;
     top: 50%;
-    -webkit-transform: translate(0, -50%);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 35px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
     cursor: pointer;
+    -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
     z-index: 10;
 }
 
@@ -362,13 +360,13 @@ form>h4{
 }
 
 .carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     position: absolute;
-    bottom: 2%;
     left: 0;
     right: 0;
+    bottom: 2%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     text-align: center;
     z-index: 10;
 }
@@ -379,10 +377,10 @@ form>h4{
 }
 
 .carousel-bullet {
-    color: #fff;
-    cursor: pointer;
     display: block;
+    color: #fff;
     font-size: 35px;
+    cursor: pointer;    
 }
 
 .carousel-bullet:hover {
@@ -398,24 +396,25 @@ form>h4{
 -----------------------------------------------------------------------------------------------------------
 PIBLISH ADS SECTIONS CSS GOES HERE*/
 #title {
-    width: 100%;
     position: absolute;
-    padding: 0px;
+    width: 100%;
     margin: 0px auto;
+    padding: 0px;
     text-align: center;
     font-size: 27px;
     color: rgba(255, 255, 255, 1);
     font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+    z-index: 9999;
 }
+
 .more1{
 	position:absolute;
 	bottom: 0;
 	left: 0;
+    font-weight: bold;
 	color: rgb(91,53,100);
 	background-color: #ECE5E5;
-	font-weight: bold;
 	z-index: 999;
 }
 
@@ -424,16 +423,16 @@ PIBLISH ADS SECTIONS CSS GOES HERE*/
 	bottom: 0;
 	right: 0;
 	color: rgb(91,53,100);
-	background-color: #ECE5E5;
-	font-weight: bold;
+    background-color: #ECE5E5;
+    font-weight: bold;
 	z-index: 999;
 }
 
 .ad{
-    width: 31%;
-    background-color: rgba(255,255,255, 1);
     float: left;
+    width: 31%;
     margin:10px 10px 10px 14px;
+    background-color: rgba(255,255,255, 1);
     border: 1px solid black;
 }
 /*
@@ -445,28 +444,30 @@ SUBMENU 3 SECTIONS GOES HERE*/
 }
 
 #wrappSection{
+    position: relative;
     width: 100%;
     height: 60%;
-    background-color: rgb(249,195,87);
-    position: relative;
+    margin-top: 10px;
     margin-bottom: 10px;
+  background-color: white;
 }
 
 .subMenuImg{
+    display: inline-block;
+    position: relative;
     width: 30%;
     height: 90%;
-    background-color: white;
-    position: relative;
-    border:1px solid black;
-    display: inline-block;
     margin-left: 2%;
     margin-top: 2%;
+    border:1px solid black;
+    background-color: white;
 }
+
 .subMenuImg>a{
-    width: 100%;
-    height: 100%;
     display: block;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .subMenuImg>a>img{
@@ -476,13 +477,13 @@ SUBMENU 3 SECTIONS GOES HERE*/
 
 #wrappSection span{
     position: absolute;
+    text-align: center;
+    width: 100%;  
+    font-size: 100%;
+    line-height: 40px;
     font-family: arial;
     font-weight: bold;
     color: black;
-    line-height: 40px;
-    text-align: center;
-    font-size: 100%;
-    width: 100%;
     background-color: rgba(255,255,255,0.4);
 }
 
@@ -493,9 +494,9 @@ SUBMENU 3 SECTIONS GOES HERE*/
 -----------------------------------------------------------------------------------------------------------
 */
 .imgAd{
-    max-width: 70%;
     float: right;
     margin-left: 15px;
+    max-width: 70%;
 }
 
 .textAd{
@@ -509,6 +510,20 @@ SUBMENU 3 SECTIONS GOES HERE*/
 .adFooter{
     float: right;
 }
+
+.adSocialShare{
+    display: inline-block;
+    background:url(../images/socialicons.png) -148px 0;
+    width: 45px;
+    height: 45px;
+}
+
+.article{
+    width: 40%;
+    background-color: white;
+    float: left;
+}
+
 /*
 ------------------------------------------------------------------------------------------------------------------
 FOOTER AND ARROW TO TOP CSS GOES HERE*/
@@ -537,33 +552,33 @@ FOOTER AND ARROW TO TOP CSS GOES HERE*/
 }
 
 .social.twitter{
-    background:url(../images/socialicons.png) -240px 0;
     width: 45px;
     height: 45px;
+    background:url(../images/socialicons.png) -240px 0;
 }
 
 .social.google{
-    background:url(../images/socialicons.png) -50px -45px;
     width: 45px;
     height: 45px;
+    background:url(../images/socialicons.png) -50px -45px;    
 }
 
 .social.instagram{
-    background:url(../images/socialicons.png) -50px 0;
     width: 45px;
     height: 45px;
+    background:url(../images/socialicons.png) -50px 0;
 }
 
 .social.pinterest{
-    background:url(../images/socialicons.png) -243px -45px;
     width: 45px;
     height: 45px;
+    background:url(../images/socialicons.png) -243px -45px;
 }
 
 .social.youtube{
-    background:url(../images/socialicons.png) -155px -45px;
     width: 45px;
     height: 45px;
+    background:url(../images/socialicons.png) -155px -45px;
 }
 
 .copyRight{
@@ -571,19 +586,19 @@ FOOTER AND ARROW TO TOP CSS GOES HERE*/
 }
 
 #arrow{
-    width: 40px;
-    height: 40px;
     display: none;
     position: fixed;
     bottom: 0;
     right: 60px;
+    width: 40px;
+    height: 40px;
     background-image: url(../images/totop.png);
 }
 
 #arrow>a{
+    display: block;
+    position: relative;
     width: 20px;
     height: 20px;
-    position: relative;
-    display: block;
 }
 /*FOOTER AND ARROW TO TOP CSS ENDS HERE
