@@ -1,0 +1,65 @@
+/*PIBLISH ADS SECTIONS CSS GOES HERE*/
+.section{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#title {
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+    z-index: 9999;
+}
+
+.ad{
+    float: left;
+    width: 31%;
+    margin:10px 10px 10px 14px;
+    background-color: rgba(255,255,255, 1);
+    border: 1px solid black;
+}
+
+.imgAd{
+    float: right;
+    margin-left: 15px;
+    max-width: 70%;
+}
+
+.textAd{
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.headerAd{
+    width: 100%;
+}
+
+.adFooter{
+    float: right;
+}
+
+.adSocialShare{
+    display: inline-block;
+    background:url(../images/socialicons.png) -148px 0;
+    width: 45px;
+    height: 45px;
+}
+
+.article{
+    width: 40%;
+    background-color: white;
+    float: left;
+}
+
+@media only screen and (max-width: 1024px){
+    .ad{
+        width: 44%;
+        float: left;
+    }
+}

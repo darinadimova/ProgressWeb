@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha);
+#adoption{
+	width: 100%;
+	background-color: white;
+}
+
+.adoptionInfo{
+	width: 100%;
+
+}
+
+#adoption h1{
+	font-family: 'Neucha', cursive;
+	font-weight: normal;
+}
+
+#adoption img{
+	width: 35%;
+	float: left;
+	margin-right: 1%;
+}
+@media only screen and (max-width: 1024px){
+	#adoption img{
+	width: 60%;
+	float: left;
+	margin-right: 1%;
+}
+}
+
+.adoptionInfo p{
+	text-align: justify;
+	font-family: 'Neucha', cursive;
+	font-size: 1em;
+	padding: 0 2% 1% 1%;
+}

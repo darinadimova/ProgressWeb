@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Домашни Лапички
+    </title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="javascript/main.js">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="icon" type="image/jpg" href="images/tabicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/adoption.css">
+  </head>
+  <body>
+    <div id="overlay" onclick="hideForm()">
+    </div>
+    <div id="arrow">
+      <a href="#">
+      </a>
+    </div>
+    <div id="wrapper">
+      <div id="header">
+        <div id="logo">
+          <a href="index.html">
+            <img src="images/mainlogo.jpg" alt="Logo">
+          </a>
+        </div>
+        <div class="account">
+          <a href="#" onclick="registerShow()">Register
+          </a>
+          <a href="#" onclick="loginShow()">Login
+          </a>
+          <!-- LOGIN FORM GOES HERE -->
+          <div id="loginForm">
+            <span onclick="hideForm()">X
+            </span>
+            <form action="#" method="POST">
+              <img class="layCat" alt="laycat" src="images/laycat.png">
+              <p class="accountHeader">
+                <span>Влезте с профила си
+                </span>
+              </p>
+              <label for="nameOfUser" class="loginUserName">Потребителско име:
+              </label>
+              <input type="text" id="nameOfUser" name="nameOfUser" class="loginInputs" placeholder="Вашето име" required>
+              <label for="loginPassword" class="loginPassword">Парола:
+              </label>
+              <input type="password" id="loginPassword" name="password" class="loginInputs" placeholder="Вашата парола" required>
+              <a href="#" onclick="forgottenPasswordShow()"> Забравили сте паралота си?
+              </a>
+              <input type="Submit" class="loginSubmit" value="Влез">
+              <div class="clear">
+              </div>
+            </form>
+          </div>
+          <!-- LOGIN FORM ENDS HERE -->
+          <!-- REGISTER FORM GOES HERE -->
+          <div id="registerForm">
+            <span onclick="hideForm()">X
+            </span>
+            <form action="#" method="POST">
+              <img class="layCat" alt="laycat" src="images/laycat.png">
+              <p class="accountHeader">
+                <span>Регистрация
+                </span>
+              </p>
+              <h4>Въведете Име и Фамилия
+              </h4>
+              <label for="username" class="registerUserName">Име:
+              </label>
+              <input type="text" class="loginUserName registerInputs" id="username" name="username" placeholder="Въведете Вашето име" required>
+              <label for="surname" class="loginUserName">Фамилия:
+              </label>
+              <input type="text" class="loginUserName registerInputs" id="surname" name="surname" placeholder="Въведете Вашата Фамилия" required>
+              <h4>
+                <span>Въведете емайл и парола
+                </span>
+              </h4>
+              <label for="email" class="registerEmail">Емайл адрес:
+              </label>
+              <input type="email" id="email" name="email" placeholder="Въведете емайл" class="registerInputs" required>
+              <label for="emailAddress" class="registerConfirmEmail">
+              </label>
+              <input type="email" placeholder="Потвърдете емайл" id="emailAddress" class="registerInputs" required>
+              <label for="keyword" class="registerPassword">Парола:
+              </label>
+              <input class="registerInputs" id="keyword" name="password" type="password" placeholder="Въведете парола" required>
+              <label for="registerPassword" class="registerPassword">
+              </label>
+              <input type="password" id="registerPassword" name="password" class="registerInputs" placeholder="Потвърдете Вашата парола" required>
+              <input type="Submit" class="registerSubmit" value="Влез">
+            </form>
+          </div>
+          <!-- REGISTER FORM ENDS HERE -->
+          <div class="clear">
+          </div>
+          <!-- FORGOTTEN PASSWORD FORM GOES HERE -->
+          <div id="forgottenPasswordForm">
+            <span onclick="hideForm()">X
+            </span>
+            <form action="#" method="POST">
+              <img class="layCat" alt="layingcat" src="images/laycat.png">
+              <p class="accountHeader">
+                <span>Забравенa парола
+                </span>
+              </p>
+              <label for="forgottenPassword" class="forgottenPassword">Въведете Емайл адрес:
+              </label>
+              <input type="email" id="forgottenPassword" class="forgottenPasswordInputs" name="forgottenPassword" placeholder="Въведете емайл адрес" required>
+              <input type="Submit" class="forgottenPasswordSubmit" value="Изпрати" onsubmit="msgSend()">
+            </form>
+          </div>
+          <!-- FORGOTTEN PASSWORD ENDS HERE -->
+        </div>
+        <div class="search">
+          <form method="POST" action="#">
+            <input type="search" class="searchInput" placeholder="Ключова дума..." required>
+            <button class="submitButton">Търси
+            </button>
+          </form>
+        </div>
+        <div class="vetImg">
+          <a href="http://dobrohrumvane.com/">
+            <img src="images/dobrohrumvane.jpg" alt="dobrohrumvane">
+          </a>
+        </div>
+        <!-- MAIN MENU GOES HERE -->
+        <div class="mainMenu">
+          <hr class="hr">
+          <ul class="menu1">
+            <li>
+              <a href="index.html">Начало
+              </a>
+            </li>
+            <li class="cat">
+              <a href="cat.html">Котета
+              </a>
+            </li>
+            <li class="dog">
+              <a href="dog.html">Кучета
+              </a>
+            </li>
+            <li>
+              <a href="#">Въпроси
+              </a>
+            </li>
+            <li>
+              <a href="forUs.html">За Нас
+              </a>
+            </li>
+            <li>
+              <a href="supportUs.html">Подкрепа
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- MAIN MENU ENDS HERE -->
+        <div class="clear">
+        </div>
+      </div>
+      <div id="adoption">
+        <h1>ОСИНОВЕТЕ ЖИВОТНО</h1>
+        <div class="adoptionInfo">
+          <img src="images/brave.jpg" alt="brave">
+          <p>Да осиновиш животно е благородна постъпка, с  която спасяваш живот. Избирайки си такъв домашен любимец, вие помагате за решаване на проблема с бездомните животни и същевременно се сдобивате  с верен приятел.</p>
+          <p>Преди да пристъпите към осиновяване на безпризорно животно не забравяйте, че отглеждането на животно е голяма отговорност и решението следва да бъде добре обмислено от цялото семейство в дългосрочен план.</p>
+          <p>Осиновяването е безплатно. Животинките си отиват у дома обезпаразитени, ваксинирани и ЕС паспорт. Всички наши животни се дават кастрирани, освен ако състоянието/възрастта им не го позволява.</p>
+          <p>Политиката на фондация „Домашни Лапички“ не е задомяване на куче или коте на всяка цена. С оглед безопасността и нормалния живот в бъдещото семейство, както и за да сме сигурни, че предлаганото куче или коте ще задоволи изискванията и възможностите на осиновителите, кандидатите попълват въпросник и/или биват интервюирани по телефона, а при възможност запознати предварително с кучето или котето. При одобрение от наша страна между фондацията и осиновителите се сключва договор, в който „Домашни Лапички“ се задължава да оказва помощ при възникнали проблеми с осиновеното животно, както и да го прибере обратно при невъзможност на осиновителите да полагат по-нататъшни адекватни грижи към домашния си любимец.</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+       <!-- FOOTER GOES HERE -->
+      <div class="footer">
+        <div class="socialWrapper">
+          <p class="copyRight">Home Paws Organization © 2016 | All Rights Reserved
+          </p>
+          <a href="#">
+            <span class="social youtube">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social pinterest">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social instagram">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social google">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social twitter">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social fb">
+            </span>
+          </a>
+          <div class="clear">
+          </div>
+        </div>
+        <div class="clear">
+        </div>
+      </div>
+      <!-- FOOTER ENDS HERE -->
+    </div>
+  </body>
+</html>
