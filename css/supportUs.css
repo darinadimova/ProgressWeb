@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha);
+
+#suportUs{
+	width: 100%;
+}
+
+.supportUsInfo{
+	width: 100%;
+	margin-left: 2%;
+}
+
+.supportUsInfo h2{
+	font-family: 'Neucha', cursive;
+	font-weight: normal;
+}
+
+.supportUsInfo p{
+	font-family: 'Neucha', cursive;
+	font-size: 1em;
+}
+
+.piggyBankImg{
+	float: left;
+	width: 20%;
+}
+
+.donationInfo span{
+	float: left;
+	width: 60%;
+	font-size: 1em;
+	font-family: arial;
+	font-weight: bold;
+}
+
+.donationInfo{
+	float: left;
+	width: 60%;
+	margin-left: 3%;
+	padding: 1%;
+	background-color:rgba(255, 195, 87, 0.88);
+	border-radius: 10px;
+}
