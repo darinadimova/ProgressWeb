@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha);
+
+
+#questions{
+	width: 100%;
+	background-color: white;
+}
+
+.questionWrapper{
+	width: 100%;
+}
+
+.questionWrapper h2{
+	text-align: center;
+	font-family: 'Neucha', cursive;
+	font-size: 1.8em;
+	font-weight: normal;	
+}
+
+.questionWrapper p{
+	padding: 10px;
+	font-family: 'Neucha', cursive;
+	font-size: 1.1em;
+	background-color:rgba(255, 195, 87, 0.88);
+  border-radius: 15px;
+}
+
+textarea{
+	display: block;
+	float: left;
+	height: 300px;
+  width: 55%;
+  margin-left: 19%;
+ 	border: 1px solid black;
+ 	box-shadow: 1px 1px 0 #DDDDDD;
+ 	font-family: 'Marck Script',cursive;
+  font-size: 22px;
+  line-height: 50px;
+  resize: none;
+}
+
+.formSubmitButton{
+		display:	block;
+		float: left;
+		width: 110px;
+    margin-top: 24%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    padding: 8px 0px;
+    border: #FFFFFF solid 1px;
+    border-radius: 5px;
+    background-image: url(../images/nav_on.png);
+    background-position: top;
+    background-repeat: repeat-x;
+    text-align: center;
+    color: white;
+		text-decoration: none;
+}
+
+#textForm label{
+    float: left;
+    margin-left: 19%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    font-family: 'Neucha', cursive;
+    text-align: center;    
+}
+
+.emailAddress{
+  float: left;
+  width: 25%;
+}
+
+
+
+@media only screen and (max-width: 1024px){
+    .formSubmitButton{
+    	margin-top: 1%;
+    	margin-left: 30%;
+    }
+}

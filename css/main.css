@@ -52,12 +52,13 @@ a:visited{
 
 .search{
     float: left;
-    width: 56%;
+    width: 53%;
+    margin-top: 2%
 }
 
 .searchInput{
     float: left;
-    width: 50%;
+    width: 37%;
     padding: 10px 5px;
     border-width: 1px;
     border-style: solid;
@@ -132,13 +133,6 @@ a:visited{
     width: 35%;
     margin-top: 9%;
     margin-right: 5%;
-}
-
-@media only screen and (max-width: 1024px){
-    #loginForm{
-    width: 300px;
-    left: 30%;
-    }
 }
 
 .loginUserName,.loginPassword,
@@ -238,13 +232,6 @@ a:visited{
     background-color: #cf9c36;
     margin-left: 40%;
     margin-top: 3%;
-}
-
-@media only screen and (max-width: 1024px){
-    #registerForm{
-    width: 400px;
-    left: 25%;
-    }
 }
 
 #forgottenPasswordForm{
@@ -363,7 +350,7 @@ form>h4{
    color: white;
 }
 
-.overlayText a{
+.overlayText span{
     display: block;
     border: #ffffff solid 1px;
     background-image: url(../images/nav_on.png);
@@ -388,7 +375,7 @@ form>h4{
 }
 
 .vetImg img{
-    width: 30%;
+    width: 14%;
     position: absolute;
     top: 2px;
     right: 135px;
@@ -516,6 +503,7 @@ FOOTER AND ARROW TO TOP CSS GOES HERE*/
     background-image: url(../images/totop.png);
 }
 
+
 #arrow>a{
     display: block;
     position: relative;
@@ -524,3 +512,60 @@ FOOTER AND ARROW TO TOP CSS GOES HERE*/
 }
 /*FOOTER AND ARROW TO TOP CSS ENDS HERE*/
 
+@media only screen and (max-width: 1024px){
+    #arrow{
+        right: 1%;
+    }
+    .search{
+    width: 100%;
+    margin-left: 11%;
+    }
+    .logo{
+        width: 58%;
+    }
+    .account{
+        float: right;
+    }
+    #loginForm{
+    width: 300px;
+    left: 30%;
+    }
+    #registerForm{
+    width: 400px;
+    left: 25%;
+    }
+    .mainMenu{
+    width: 100%;
+    }
+    .mainMenu ul{
+    margin-left: 10%;
+    }
+    #menuimg .smallOverlay .overlayText{
+        margin-top: 10%;
+    }
+    .overlayText>h2{
+        font-size: 2vw;
+    }
+    .overlayText p{
+        font-size: 1.3vw;
+    }
+    .smallOverlay{
+        width: 32%;
+        min-height: 152px;
+    }
+    .overlayText span{
+        font-size: 1.2vw;
+        padding: 0;
+        width: 23%;
+    }
+    #wrappSection span{
+        font-size: 65%;
+    }
+    .vetImg img{
+        width: 30%;
+        right: 10%;
+    }
+    .account{
+        margin-top: 17%;
+    }
+}
