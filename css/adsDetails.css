@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha);
+#adsWrapper{
+  width: 100%;
+  background-color: white;
+}
+
+#imgContainer{
+  float: left;
+  margin-left: 6%;
+}
+
+.mainImage img{
+ width: 650px;
+ height: 433px;
+}
+
+#imgContainer .smallImgs{
+  width:17%;
+  float:left;
+  margin-right:3%;
+}
+#imgContainer .smallImgs img{
+  width:109px;
+  height: 72px;
+  cursor:pointer;
+}
+
+#nameOfArticle{
+  float: left;
+  width: 100%;
+  margin-left: 9%;
+  font-family: 'Neucha', cursive;
+  
+}
+
+.generalDetails{
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  height: 100px;
+  background-color: purple;
+  font-family: 'Neucha', cursive;
+  padding: 1%;
+}
+
+#additionalInfo{
+  width: 100%;
+  border-top: 2px solid purple;
+  font-family: "arial";
+  text-align: left;
+  font-weight: normal;
+  /*padding: 1%;*/
+  font-size: 1em;
+
+
+}
+
+.owner{
+  background-color: rgba(249,195,87,0.8);
+}
+
+.socialMedia{
+  background-color: rgba(91,53,100,0.7);
+}
+
+.traits{
+  background-color: rgba(98,177,192,0.8);
+}

@@ -1,3 +1,9 @@
+$( document ).ready(function() {
+    $('#imgContainer .smallImgs').click(function(){
+      $('#imgContainer .mainImage img').attr('src',$(this).children("img").attr('src')); 
+    });
+});
+
 function loginShow() {
     document.getElementById('registerForm').style.display = "none";
     document.getElementById('loginForm').style.display = "block";
@@ -39,3 +45,4 @@ document.addEventListener("scroll", function() {
         document.getElementById('arrow').style.display = "none";
     }
 });
+

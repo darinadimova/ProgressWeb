@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Домашни Лапички
+    </title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="icon" type="image/jpg" href="images/tabicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/adsDetails.css">
+  </head>
+  <body>
+    <div id="overlay" onclick="hideForm()">
+    </div>
+    <div id="arrow">
+      <a href="#">
+      </a>
+    </div>
+    <div id="wrapper">
+      <div id="header">
+        <div id="logo">
+          <a href="index.html">
+            <img src="images/mainlogo.jpg" alt="Logo">
+          </a>
+        </div>
+        <div class="account">
+          <a href="#" onclick="registerShow()">Register
+          </a>
+          <a href="#" onclick="loginShow()">Login
+          </a>
+          <!-- LOGIN FORM GOES HERE -->
+          <div id="loginForm">
+            <span onclick="hideForm()">X
+            </span>
+            <form action="#" method="POST">
+              <img class="layCat" alt="laycat" src="images/laycat.png">
+              <p class="accountHeader">
+                <span>Влезте с профила си
+                </span>
+              </p>
+              <label for="nameOfUser" class="loginUserName">Потребителско име:
+              </label>
+              <input type="text" id="nameOfUser" name="nameOfUser" class="loginInputs" placeholder="Вашето име" required>
+              <label for="loginPassword" class="loginPassword">Парола:
+              </label>
+              <input type="password" id="loginPassword" name="password" class="loginInputs" placeholder="Вашата парола" required>
+              <a href="#" onclick="forgottenPasswordShow()"> Забравили сте паралота си?
+              </a>
+              <input type="Submit" class="loginSubmit" value="Влез">
+              <div class="clear">
+              </div>
+            </form>
+          </div>
+          <!-- LOGIN FORM ENDS HERE -->
+          <!-- REGISTER FORM GOES HERE -->
+          <div id="registerForm">
+            <span onclick="hideForm()">X
+            </span>
+            <form action="#" method="POST">
+              <img class="layCat" alt="laycat" src="images/laycat.png">
+              <p class="accountHeader">
+                <span>Регистрация
+                </span>
+              </p>
+              <h4>Въведете Име и Фамилия
+              </h4>
+              <label for="username" class="registerUserName">Име:
+              </label>
+              <input type="text" class="loginUserName registerInputs" id="username" name="username" placeholder="Въведете Вашето име" required>
+              <label for="surname" class="loginUserName">Фамилия:
+              </label>
+              <input type="text" class="loginUserName registerInputs" id="surname" name="surname" placeholder="Въведете Вашата Фамилия" required>
+              <h4>
+                <span>Въведете емайл и парола
+                </span>
+              </h4>
+              <label for="email" class="registerEmail">Емайл адрес:
+              </label>
+              <input type="email" id="email" name="email" placeholder="Въведете емайл" class="registerInputs" required>
+              <label for="emailAddress" class="registerConfirmEmail">
+              </label>
+              <input type="email" placeholder="Потвърдете емайл" id="emailAddress" class="registerInputs" required>
+              <label for="keyword" class="registerPassword">Парола:
+              </label>
+              <input class="registerInputs" id="keyword" name="password" type="password" placeholder="Въведете парола" required>
+              <label for="registerPassword" class="registerPassword">
+              </label>
+              <input type="password" id="registerPassword" name="password" class="registerInputs" placeholder="Потвърдете Вашата парола" required>
+              <input type="Submit" class="registerSubmit" value="Влез">
+            </form>
+          </div>
+          <!-- REGISTER FORM ENDS HERE -->
+          <div class="clear">
+          </div>
+          <!-- FORGOTTEN PASSWORD FORM GOES HERE -->
+          <div id="forgottenPasswordForm">
+            <span onclick="hideForm()">X
+            </span>
+            <form action="#" method="POST">
+              <img class="layCat" alt="layingcat" src="images/laycat.png">
+              <p class="accountHeader">
+                <span>Забравенa парола
+                </span>
+              </p>
+              <label for="forgottenPassword" class="forgottenPassword">Въведете Емайл адрес:
+              </label>
+              <input type="email" id="forgottenPassword" class="forgottenPasswordInputs" name="forgottenPassword" placeholder="Въведете емайл адрес" required>
+              <input type="Submit" class="forgottenPasswordSubmit" value="Изпрати" onsubmit="msgSend()">
+            </form>
+          </div>
+          <!-- FORGOTTEN PASSWORD ENDS HERE -->
+        </div>
+        <div class="search">
+          <form method="POST" action="#">
+            <input type="search" class="searchInput" placeholder="Ключова дума..." required>
+            <button class="submitButton">Търси
+            </button>
+          </form>
+        </div>
+        <div class="vetImg">
+          <img src="images/dobrohrumvane.jpg" alt="dobrohrumvane">
+        </div>
+        <!-- MAIN MENU GOES HERE -->
+        <div class="mainMenu">
+          <hr class="hr">
+          <ul class="menu1">
+            <li>
+              <a href="index.html">Начало
+              </a>
+            </li>
+            <li class="cat">
+              <a href="cat.html">Котета
+              </a>
+            </li>
+            <li class="dog">
+              <a href="dog.html">Кучета
+              </a>
+            </li>
+            <li>
+              <a href="questions.html">Въпроси
+              </a>
+            </li>
+            <li>
+              <a href="forUs.html">За Нас
+              </a>
+            </li>
+            <li>
+              <a href="supportUs.html">Подкрепа
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- MAIN MENU ENDS HERE -->
+        <div class="clear">
+        </div>
+      </div>
+      <div id="adsWrapper">
+        <h2 id="nameOfArticle">Моето име е: Патата</h2>
+        <div id="imgContainer">
+          <div class="mainImage">
+            <img src="images/patata1.jpg" alt="Smiley face">
+          </div>
+          <div class="clear">
+          </div>
+          <div class="smallImgs">
+            <img src="images/patata1.jpg" alt="img1">
+          </div>
+           <div class="smallImgs">
+            <img src="images/patata3.jpg" alt="img2">
+            </div>
+           <div class="smallImgs">
+            <img src="images/patata4.jpg" alt="img3">
+           </div>
+          <div class="clear">
+          </div>
+        </div>
+        <div class="generalDetails owner">В момента за мен се грижи: Петя Христова която е временен приемен стопанин за мен. </div>
+        <div class="generalDetails socialMedia">Сподели ме със социалните медии:<span class="socialShare"></span>
+        </div>
+        <div class="generalDetails traits">Основни характеристики:</div>
+        <div class="clear"></div>
+        <div id="additionalInfo"><p>Патата е щастливка. Не защото е получила нараняване на предна дясна лапа, което е прекъснало инервацията и усещането в долната част на лапата й (вероятно от удар с кола). А защото именно заради окаяния й вид с кървава, влачеща се по пода лапа, тя бе извадена от общинския приют в Богров, където бе прекарала повече от година сама в клетка, без разходки, слънце, трева и внимание. А там останаха още 1500 кучета. Чакат.ХАРАКТЕР И ИСТОРИЯ на Патата/ Картофче:
+        Патата се чувства добре, възстановява се бързо и дори вече тича и скача! Зарадва се много на нашата кучешка разходка и тичаше към всички за прегръдки!
+        Патата/ Картофче вече се разхожда спокойно на повод, има хигиенни навици и е изключително добра, обичлива, мила и послушна! Ще бъде много предана на нейния бъдещ стопанин. 
+        Патата/ Картофче се радва се на човешкото внимание и се усмихва дори и на масата за преглед в клиниката, където повечето други пациенти са стресирани и тъжни.
+        Тя е кастрирана, обезпаразитена, с чип и паспорт.
+        Обича да се излежава в тревата и да подскача щастливо на зелено, така че би се радвала особено на къща с дворче или на човек, който ще я разхожда търпеливо и ще се радва с нея на природата!
+        Тя не лае, не дъвче обувки, не прави бели... въобще идеално куче!Обича да я галят и да я гледат любовно в очите, след което потърква благодарно носле и те близва.</p>
+        </div>
+      </div>
+        <!-- FOOTER GOES HERE -->
+      <div class="clear">
+      </div>
+      <div class="footer">
+        <div class="socialWrapper">
+          <p class="copyRight">Home Paws Organization © 2016 | All Rights Reserved
+          </p>
+          <a href="#">
+            <span class="social youtube">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social pinterest">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social instagram">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social google">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social twitter">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social fb">
+            </span>
+          </a>
+          <div class="clear">
+          </div>
+        </div>
+        <div class="clear">
+        </div>
+      </div>
+      <!-- FOOTER ENDS HERE -->
+    </div>
+  </body>
+</html>
