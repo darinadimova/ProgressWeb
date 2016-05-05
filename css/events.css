@@ -1,0 +1,26 @@
+#events{
+	width: 100%;
+	background-color: white;
+}
+
+.eventsSection{
+	width: 100%;
+}
+
+.eventsSection p{
+	float: left;
+	font-family: 
+}
+
+.eventMap{
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+
+iframe{
+	  left:0;
+    top:0;
+    width:100%;
+    position:relative;
+}
