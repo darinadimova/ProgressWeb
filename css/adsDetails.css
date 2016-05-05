@@ -6,22 +6,23 @@
 
 #imgContainer{
   float: left;
+  width: 55%;
   margin-left: 6%;
 }
 
 .mainImage img{
- width: 650px;
- height: 433px;
+ width: 100%;
+ height: auto;
 }
 
 #imgContainer .smallImgs{
   width:17%;
   float:left;
-  margin-right:3%;
+  margin-right: 4%;
 }
 #imgContainer .smallImgs img{
-  width:109px;
-  height: 72px;
+  width:100%;
+  height: auto;
   cursor:pointer;
 }
 
@@ -34,9 +35,8 @@
 }
 
 .generalDetails{
-  float: left;
+  float: right;
   width: 30%;
-  margin-left: 5%;
   margin-bottom: 2%;
   height: 100px;
   background-color: purple;
@@ -66,4 +66,33 @@
 
 .traits{
   background-color: rgba(98,177,192,0.8);
+}
+.socialWrapper2{
+  padding-right:22%;
+  margin-top:5%;
+}
+.socialWrapper2 .social{
+  float: right; 
+  margin-right: 20%;
+}
+
+.socialWrapper2 .social.facebook2{
+    background: url(../images/blackwhiteicons.png) -11px 46px;
+    width: 34px;
+    height: 34px;
+    border-radius: 25px;
+}
+
+.socialWrapper2 .social.twitter2{
+    background:url(../images/blackwhiteicons.png) -56px 46px;
+    width: 34px;
+    height: 34px;
+    border-radius: 25px;
+}
+
+.socialWrapper2 .social.instagram2{
+    background:url(../images/blackwhiteicons.png) -101px 46px;
+    width: 34px;
+    height: 34px;
+    border-radius: 25px;
 }

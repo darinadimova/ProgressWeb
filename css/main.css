@@ -289,7 +289,7 @@ form>h4{
 .mainMenu{
     float: left;
     width: 79%;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .menu1>li{
@@ -378,8 +378,7 @@ form>h4{
     width: 14%;
     position: absolute;
     top: 2px;
-    right: 135px;
-    bottom: 293px;
+    right: 9.5%;
 }
 
 /*SUBMENU 3 SECTIONS GOES HERE*/
