@@ -130,8 +130,9 @@
 @media only screen and (max-width: 1024px){
     .socialWrapper2{
         margin-right: 0;
+        padding-right: 7%;
     }
     .socialWrapper2 .social{
-      margin-right: 13%;
+      margin-right: 12%;
     }
 }
