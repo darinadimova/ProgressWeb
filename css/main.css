@@ -525,12 +525,14 @@ FOOTER AND ARROW TO TOP CSS GOES HERE*/
         float: right;
     }
     #loginForm{
-    width: 300px;
-    left: 30%;
+    width: 55%;
+    height: 33%;
+    left: 25%;
     }
     #registerForm{
-    width: 400px;
-    left: 25%;
+    width: 65%;
+    height: 51%;
+    left: 18%;
     }
     .mainMenu{
     width: 100%;
@@ -549,7 +551,7 @@ FOOTER AND ARROW TO TOP CSS GOES HERE*/
     }
     .smallOverlay{
         width: 32%;
-        min-height: 152px;
+        min-height: 230px;
     }
     .overlayText span{
         font-size: 1.2vw;
@@ -565,5 +567,16 @@ FOOTER AND ARROW TO TOP CSS GOES HERE*/
     }
     .account{
         margin-top: 17%;
+    }
+    .copyRight{
+        margin-top: 8%;
+    }
+    #forgottenPassword{
+        width: 80%;
+        height: 23%;
+        left: 10%;
+    }
+    .forgottenPasswordInputs{
+        width: 46%;
     }
 }
