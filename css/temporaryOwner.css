@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha);
+#wrapper{
+	height: auto;
+}
+
+#temporaryOwnerWrapper{
+	width: 98%;
+	margin-left: 1%;
+	padding: 1%;
+}
+
+h1,h2,p,label{
+	font-family: 'Neucha', cursive;
+	line-height: 200%;
+}
+
+img.fosterImg{
+	float: right;
+}
+
+p.indent{
+	text-indent: 2%;
+}
+
+.temporaryOwnerForm{
+	display: none;
+	width: 100%;
+	margin-left: 16%;
+}
+
+.temporaryOwnerForm form{
+	float: left;
+	width: 56%;
+}
+
+.temporaryOwnerForm input{
+	display: block;
+	width: 35%;
+
+}
+.temporaryOwnerForm input[type="submit"]{
+	width: 11%;
+	height: 30px;
+	margin-top: 4%;
+	background-color: white;
+	border-radius: 11%;
+}
+
+img.pawToHand{
+	float: left;
+	width: 18%;
+	height: auto;
+	margin-top: 1%;
+}
+
+.arrowDown{
+    position: relative;
+    margin-bottom: 1%;
+    border-bottom: 1px solid #999;
+    background: #f3f3f3;
+    cursor: pointer;
+  }
+
+.arrowDown:before, .arrowDown:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: 0;
+  }
+
+.arrowDown:before {
+    bottom: -16px;
+    left: 50%;
+    border-top-color: #777;
+    border-width: 16px;
+  }
+
+ .arrowDown:after {
+    bottom: -15px;
+    left: 50%;
+    border-top-color: rgb(249,195,87);
+    border-width: 15px;
+  }

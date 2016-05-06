@@ -1,9 +1,20 @@
 if (typeof $!="undefined"){
-$( document ).ready(function() {
-    $('#imgContainer .smallImgs').click(function(){
-      $('#imgContainer .mainImage img').attr('src',$(this).children("img").attr('src')); 
+    $( document ).ready(function() {
+
+        $('#imgContainer .smallImgs').click(function(){
+          $('#imgContainer .mainImage img').attr('src',$(this).children("img").attr('src')); 
+        });
+        /*event maps*/
+        $(".fa.fa-location-arrow").click(function(){
+            $(".eventMap").toggle("slow");
+        });
+        /*event arrow down*/
+        $(".arrowDown").click(function(){
+            $(".temporaryOwnerForm").toggle("fast", function() {
+                $(window).scrollTop($(document).height());
+            });
+        });
     });
-});
 }
 
 function loginShow() {

@@ -47,13 +47,18 @@
 #additionalInfo{
   width: 100%;
   border-top: 2px solid purple;
-  font-family: "arial";
+  font-family: 'Neucha', cursive;
   text-align: left;
   font-weight: normal;
-  /*padding: 1%;*/
   font-size: 1em;
+}
 
+#additionalInfo p{
+  padding: 1% 6% 0 6%;
+}
 
+#additionalInfo p:nth-child(3){
+  padding-bottom: 6%;
 }
 
 .owner{
@@ -95,4 +100,25 @@
     width: 34px;
     height: 34px;
     border-radius: 25px;
+}
+
+.socialWrapper2 .social.facebook2:hover{
+    background: url(../images/blackwhiteicons.png) -12px 90px;
+    width: 33px;
+    height: 33px;
+    border-radius: 24px;
+}
+
+.socialWrapper2 .social.twitter2:hover{
+    background: url(../images/blackwhiteicons.png) -57px 90px;
+    width: 33px;
+    height: 33px;
+    border-radius: 24px;
+}
+
+.socialWrapper2 .social.instagram2:hover{
+    background: url(../images/blackwhiteicons.png) 45px 90px;
+    width: 33px;
+    height: 33px;
+    border-radius: 24px;
 }

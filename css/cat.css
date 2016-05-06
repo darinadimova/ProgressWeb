@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha);
+
 /*PIBLISH ADS SECTIONS CSS GOES HERE*/
 .section{
     width: 100%;
@@ -57,9 +59,57 @@
     float: left;
 }
 
+.goToDog{
+    margin-bottom: 2%;
+    margin-right: 4%;
+}
+
+.goToDog>a{
+    float: right;
+    margin-left: 2%;
+    font-family: 'Neucha', cursive;
+    background-color: white;
+}
+
+.goToDog>p{
+    float: right;
+    font-family: 'Neucha', cursive;
+    background-color: white;
+}
+
+
+.goToDog>a{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.goToCats{
+    margin-bottom: 2%;
+}
+
+.goToCats>a{
+    float: left;
+    margin-left: 2%;
+    font-family: 'Neucha', cursive;
+    background-color: white;
+}
+
+.goToCats>p{
+    float: left;
+    font-family: 'Neucha', cursive;
+    background-color: white;
+}
+
+
+.goToCats>a{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
 @media only screen and (max-width: 1024px){
     .ad{
         width: 44%;
         float: left;
     }
 }
+
