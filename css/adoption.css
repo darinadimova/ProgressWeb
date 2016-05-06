@@ -88,4 +88,12 @@ p.header{
 	p.header{
 		font-size: 0.8em;
 	}
+	#adoption h1{
+		margin-left: 19%;
+	}
+	#adoption adNavigation>img{
+		width: 30%;
+		margin-right: 15%;
+		margin-top: 4%;
+	}
 }
