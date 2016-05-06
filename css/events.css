@@ -39,3 +39,9 @@ hr{
 	font-family: 'Neucha', cursive;
 	color: black;
 }
+
+@media only screen and (max-width: 1024px){
+    .eventMap{
+        width: 70%;
+    }
+}

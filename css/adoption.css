@@ -21,14 +21,6 @@
 	margin-right: 1%;
 }
 
-@media only screen and (max-width: 1024px){
-	#adoption img{
-	width: 60%;
-	float: left;
-	margin-right: 1%;
-}
-}
-
 .adoptionInfo p{
 	text-align: justify;
 	font-family: 'Neucha', cursive;
@@ -86,4 +78,14 @@ p.header{
 	width: 20%;
 	margin-right: 24%;
 
+}
+
+@media only screen and (max-width: 1024px){
+	#adoption img{
+	float: left;
+	margin-right: 1%;
+	}
+	p.header{
+		font-size: 0.8em;
+	}
 }

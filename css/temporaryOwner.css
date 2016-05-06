@@ -84,3 +84,15 @@ img.pawToHand{
     border-top-color: rgb(249,195,87);
     border-width: 15px;
   }
+
+  @media only screen and (max-width: 1024px){
+    .temporaryOwnerForm input{
+        width: 50%;
+    }
+    .temporaryOwnerForm input[type="submit"]{
+    	width: 22%;
+    }
+    .copyRight{
+    	width: 70%;
+    }
+  }

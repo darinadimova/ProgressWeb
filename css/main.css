@@ -579,4 +579,7 @@ FOOTER AND ARROW TO TOP CSS GOES HERE*/
     .forgottenPasswordInputs{
         width: 46%;
     }
+    #wrappSection{
+        height: 45%;
+    }
 }
