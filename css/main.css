@@ -1,73 +1,69 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
-html,body,ul,a,button,li,hr{
+html,
+body,
+ul,
+a,
+button,
+li,
+hr {
     margin: 0;
     padding: 0;
 }
-
-body,html{
+body,
+html {
     width: 100%;
     height: 100%;
     background-color: #F1EEEE;
     background-image: url("../images/paw.png");
 }
-
-a{
+a {
     text-decoration: none;
     color: #578DF9;
 }
-
-a:visited{
+a:visited {
     color: #578DF9;
 }
-
-#overlay{
-    display:none;
+#overlay {
+    display: none;
     position: fixed;
     width: 100%;
-    height:100%;
-    background-color: rgba(56,56,56,0.5);
+    height: 100%;
+    background-color: rgba(56, 56, 56, 0.5);
     z-index: 9988;
 }
-
-#wrapper{
+#wrapper {
     margin: 0 auto;
     width: 81%;
     height: 100%;
     background-color: white;
 }
-
-#header{
+#header {
     width: 100%;
-    border:1px solid rgb(249,195,87);
+    border: 1px solid rgb(249, 195, 87);
 }
-
-.clear{
+.clear {
     clear: both;
 }
-
-#logo{
+#logo {
     float: left;
     width: 21%;
 }
-
-.search{
+.search {
     float: left;
     width: 53%;
     margin-top: 2%
 }
-
-.searchInput{
+.searchInput {
     float: left;
     width: 37%;
     padding: 10px 5px;
     border-width: 1px;
     border-style: solid;
-    border-color: rgba(91,53,100,0.5);
+    border-color: rgba(91, 53, 100, 0.5);
     border-radius: 3px 0 0 3px;
     border-right: 0;
 }
-
-.submitButton{
+.submitButton {
     position: relative;
     float: left;
     padding: 0;
@@ -75,48 +71,42 @@ a:visited{
     width: 110px;
     border: 0;
     cursor: pointer;
-    background-color: rgb(249,195,87);
+    background-color: rgb(249, 195, 87);
 }
-
-.searchInput:focus{
+.searchInput:focus {
     outline: 0;
     background: #F3EFEF;
-    box-shadow: 0 0 2px rgba(57,57,57,.8) inset;
+    box-shadow: 0 0 2px rgba(57, 57, 57, .8) inset;
 }
-
 .submitButton:before {
     content: '';
     position: absolute;
     border-width: 8px 8px 8px 0;
     border-style: solid solid solid none;
-    border-color: transparent rgb(249,195,87) transparent;
+    border-color: transparent rgb(249, 195, 87) transparent;
     top: 12px;
     left: -6px;
 }
-
-.account{
+.account {
     float: left;
     margin-top: 10px;
     margin-right: 23px;
     width: 24%;
 }
-
-.account>a{
+.account>a {
     float: right;
     width: 115px;
     line-height: 60px;
     text-align: center;
-    font-family: arial;    
+    font-family: arial;
 }
-
-.account>a:hover{
+.account>a:hover {
     text-decoration: underline;
-    background-color: rgb(249,195,87);
+    background-color: rgb(249, 195, 87);
 }
-
 /*LOGIN , REGISTER , FORGOTTEN PASSWORD CSS*/
 
-#loginForm{
+#loginForm {
     position: absolute;
     display: none;
     top: 9%;
@@ -124,36 +114,35 @@ a:visited{
     right: 0;
     width: 90%;
     height: 70%;
-    background-color:rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 9999;
 }
-
-#loginForm img,#registerForm img{
+#loginForm img,
+#registerForm img {
     float: right;
     width: 35%;
     margin-top: 9%;
     margin-right: 5%;
 }
-
-.loginUserName,.loginPassword,
-.forgottenPassword{
+.loginUserName,
+.loginPassword,
+.forgottenPassword {
     display: block;
     margin-top: 3%;
     margin-right: 0;
     margin-left: 20%;
-    margin-bottom: 0; 
+    margin-bottom: 0;
     font-family: arial;
 }
-
-.loginInputs,.registerInputs{
+.loginInputs,
+.registerInputs {
     display: inline-block;
-    margin:30px 0px 0 20%;
+    margin: 30px 0px 0 20%;
     padding: 5px;
     width: 30%;
-    border:1px solid black;
+    border: 1px solid black;
 }
-
-.loginSubmit{
+.loginSubmit {
     display: block;
     border: #ffffff solid 1px;
     background-image: url(../images/nav_on.png);
@@ -169,54 +158,51 @@ a:visited{
     margin-left: 40%;
     margin-top: 3%;
 }
-
-#loginForm a{
+#loginForm a {
     display: block;
     margin: 15px 0 6px 35%;
 }
-
-#loginForm>span,#registerForm>span,#forgottenPasswordForm>span{
+#loginForm>span,
+#registerForm>span,
+#forgottenPasswordForm>span {
     position: absolute;
     right: 15px;
     top: 5px;
     cursor: pointer;
 }
-
-.accountHeader{
+.accountHeader {
     text-align: center;
     font-family: arial;
     border-bottom: 1px dotted black;
     margin-right: 40%;
     margin-top: 4%;
 }
-
-.hr{
-    border-color: rgb(249,195,87);
+.hr {
+    border-color: rgb(249, 195, 87);
 }
-
-#registerForm{
+#registerForm {
     position: absolute;
     top: 5%;
     left: 5%;
     right: 0;
     width: 90%;
     height: 90%;
-    background-color:rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 9999;
     display: none;
 }
-
 .registerUserName,
-.registerInputs,.registerPassword,.registerEmail{
+.registerInputs,
+.registerPassword,
+.registerEmail {
     display: block;
     margin-top: 1%;
     margin-right: 0;
     margin-left: 20%;
-    margin-bottom: 0; 
+    margin-bottom: 0;
     font-family: arial;
 }
-
-.registerSubmit{
+.registerSubmit {
     display: block;
     border: #ffffff solid 1px;
     background-image: url(../images/nav_on.png);
@@ -232,30 +218,27 @@ a:visited{
     margin-left: 40%;
     margin-top: 3%;
 }
-
-#forgottenPasswordForm{
+#forgottenPasswordForm {
     position: absolute;
     top: 9%;
     left: 5%;
     right: 0;
     width: 90%;
     height: 60%;
-    background-color:rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 9999;
     display: none;
 }
-
-.forgottenPasswordInputs{
+.forgottenPasswordInputs {
     display: inline-block;
     width: 40%;
-    margin:30px 0px 0 10%;
+    margin: 30px 0px 0 10%;
     padding: 5px;
-    border:1px solid black;
-    display: block; 
+    border: 1px solid black;
+    display: block;
     font-family: arial;
 }
-
-.forgottenPasswordSubmit{
+.forgottenPasswordSubmit {
     display: block;
     border: #ffffff solid 1px;
     background-image: url(../images/nav_on.png);
@@ -271,85 +254,72 @@ a:visited{
     margin-left: 40%;
     margin-top: 3%;
 }
-
-#forgottenPasswordForm img{
+#forgottenPasswordForm img {
     width: 35%;
     margin-top: 5%;
     margin-right: 5%;
     float: right;
 }
-
-form>h4{
+form>h4 {
     margin-left: 20%;
 }
-
 /*END OF LOGIN,REGISTER AND FORGOTTEN PASSWORD ENDS HERE*/
 /*MAIN MENU CSS GOES HERE*/
-.mainMenu{
+
+.mainMenu {
     float: left;
     width: 79%;
     margin-top: 7%;
 }
-
-.menu1>li{
+.menu1>li {
     float: left;
     width: 150px;
     text-align: center;
     list-style-type: none;
-    line-height: 60px;  
+    line-height: 60px;
 }
-
-.menu1 li>a{
+.menu1 li>a {
     display: block;
     color: black;
     font-size: 20px;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
-
-.menu1 a:hover{
-    background-color: rgb(249,195,87);
+.menu1 a:hover {
+    background-color: rgb(249, 195, 87);
 }
-
-.menu1 li.dog a:hover{
-    background-color: rgb(91,53,100);
-    color: rgb(249,195,87);
+.menu1 li.dog a:hover {
+    background-color: rgb(91, 53, 100);
+    color: rgb(249, 195, 87);
 }
-
-.menu1 li.cat a:hover{
-    color: rgb(249,195,87);
-    background-color: rgb(91,53,100);
+.menu1 li.cat a:hover {
+    color: rgb(249, 195, 87);
+    background-color: rgb(91, 53, 100);
 }
-
-
 /*MAIN MENU CSS ENDS HERE*/
-#menuimg{
+
+#menuimg {
     width: 100%;
     margin-top: 5px;
 }
-
-#menuimg img{
+#menuimg img {
     width: 100%;
 }
-
-.smallOverlay{
+.smallOverlay {
     position: absolute;
     width: 25%;
     min-height: 425px;
-    background-color:rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
-
-.overlayText h2{
+.overlayText h2 {
     font-family: 'Comfortaa', cursive;
     font-weight: normal;
     color: white;
 }
-
-.overlayText p{
+.overlayText p {
     font-family: 'Comfortaa', cursive;
-   color: white;
+    color: white;
 }
-
-.overlayText span{
+.overlayText span {
     display: block;
     border: #ffffff solid 1px;
     background-image: url(../images/nav_on.png);
@@ -363,135 +333,117 @@ form>h4{
     text-decoration: none;
     background-color: #cf9c36;
 }
-
-.overlayText a:visited{
+.overlayText a:visited {
     color: white;
 }
-
-.smallOverlay .overlayText{
+.smallOverlay .overlayText {
     margin: 25% 2% 2% 5%;
     line-height: 140%;
 }
-
-.vetImg img{
+.vetImg img {
     width: 14%;
     position: absolute;
     top: 2px;
     right: 9.5%;
 }
-
 /*SUBMENU 3 SECTIONS GOES HERE*/
-#wrappSection{
+
+#wrappSection {
     position: relative;
     width: 100%;
     height: 60%;
     margin-top: 10px;
     margin-bottom: 10px;
-  background-color: white;
+    background-color: white;
 }
-
-.subMenuImg{
+.subMenuImg {
     display: inline-block;
     position: relative;
     width: 30%;
     height: 90%;
     margin-left: 2%;
     margin-top: 2%;
-    border:1px solid black;
+    border: 1px solid black;
     background-color: white;
 }
-
-.subMenuImg>a{
+.subMenuImg>a {
     display: block;
     position: relative;
     width: 100%;
     height: 100%;
 }
-
-.subMenuImg>a>img{
+.subMenuImg>a>img {
     width: 100%;
     height: 100%;
 }
-
-#wrappSection span{
+#wrappSection span {
     position: absolute;
     text-align: center;
-    width: 100%;  
+    width: 100%;
     font-size: 100%;
     line-height: 40px;
     font-family: arial;
     font-weight: bold;
     color: black;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255, 255, 255, 0.4);
 }
-
-#wrappSection a:hover span{
-    background-color: rgb(249,195,87);
+#wrappSection a:hover span {
+    background-color: rgb(249, 195, 87);
 }
-
 /*
 ------------------------------------------------------------------------------------------------------------------
 FOOTER AND ARROW TO TOP CSS GOES HERE*/
-.footer{
+
+.footer {
     width: 100%;
-    border:1px solid rgb(249,195,87);
+    border: 1px solid rgb(249, 195, 87);
     background-color: white;
     margin-top: 5px;
 }
-
-.footer .socialWrapper{
+.footer .socialWrapper {
     margin: 0 auto;
     width: 82%;
     height: 100%;
     background-color: white;
 }
-
-.footer .social{
+.footer .social {
     display: block;
     float: right;
 }
-
-.social.fb{
-    background:url(../images/socialicons.png) -148px 0;
+.social.fb {
+    background: url(../images/socialicons.png) -148px 0;
     width: 45px;
     height: 45px;
 }
-
-.social.twitter{
+.social.twitter {
     width: 45px;
     height: 45px;
-    background:url(../images/socialicons.png) -240px 0;
+    background: url(../images/socialicons.png) -240px 0;
 }
-
-.social.google{
+.social.google {
     width: 45px;
     height: 45px;
-    background:url(../images/socialicons.png) -50px -45px;    
+    background: url(../images/socialicons.png) -50px -45px;
 }
-
-.social.instagram{
+.social.instagram {
     width: 45px;
     height: 45px;
-    background:url(../images/socialicons.png) -50px 0;
+    background: url(../images/socialicons.png) -50px 0;
 }
-
-.social.pinterest{
+.social.pinterest {
     width: 45px;
     height: 45px;
-    background:url(../images/socialicons.png) -243px -45px;
+    background: url(../images/socialicons.png) -243px -45px;
 }
-
-.social.youtube{
+.social.youtube {
     width: 45px;
     height: 45px;
-    background:url(../images/socialicons.png) -155px -45px;
+    background: url(../images/socialicons.png) -155px -45px;
 }
-
-.copyRight{
+.copyRight {
     float: left;
 }
-
-#arrow{
+#arrow {
     display: none;
     position: fixed;
     bottom: 0;
@@ -500,9 +452,7 @@ FOOTER AND ARROW TO TOP CSS GOES HERE*/
     height: 40px;
     background-image: url(../images/totop.png);
 }
-
-
-#arrow>a{
+#arrow>a {
     display: block;
     position: relative;
     width: 40px;
@@ -510,76 +460,180 @@ FOOTER AND ARROW TO TOP CSS GOES HERE*/
 }
 /*FOOTER AND ARROW TO TOP CSS ENDS HERE*/
 
-@media only screen and (max-width: 1024px){
-    #arrow{
+@media only screen and (max-width: 1024px) {
+    #arrow {
         right: 1%;
     }
-    .search{
-    width: 100%;
-    margin-left: 11%;
+    .search {
+        width: 100%;
+        margin-left: 11%;
     }
-    .logo{
+    .logo {
         width: 58%;
     }
-    .account{
+    .account {
         float: right;
     }
-    #loginForm{
-    width: 55%;
-    height: 33%;
-    left: 25%;
+    #loginForm {
+        width: 55%;
+        height: 33%;
+        left: 25%;
     }
-    #registerForm{
-    width: 65%;
-    height: 51%;
-    left: 18%;
+    #registerForm {
+        width: 65%;
+        height: 51%;
+        left: 18%;
     }
-    .mainMenu{
-    width: 100%;
+    .mainMenu {
+        width: 100%;
     }
-    .mainMenu ul{
-    margin-left: 10%;
+    .mainMenu ul {
+        margin-left: 10%;
     }
-    #menuimg .smallOverlay .overlayText{
+    #menuimg .smallOverlay .overlayText {
         margin-top: 10%;
     }
-    .overlayText>h2{
+    .overlayText>h2 {
         font-size: 2vw;
     }
-    .overlayText p{
+    .overlayText p {
         font-size: 1.3vw;
     }
-    .smallOverlay{
+    .smallOverlay {
         width: 32%;
         min-height: 230px;
     }
-    .overlayText span{
+    .overlayText span {
         font-size: 1.2vw;
         padding: 0;
         width: 23%;
     }
-    #wrappSection span{
+    #wrappSection span {
         font-size: 65%;
     }
-    .vetImg img{
+    .vetImg img {
         width: 30%;
         right: 10%;
     }
-    .account{
+    .account {
         margin-top: 17%;
     }
-    .copyRight{
+    .copyRight {
         margin-top: 8%;
     }
-    #forgottenPasswordForm{
+    #forgottenPasswordForm {
         width: 80%;
         height: 23%;
         left: 10%;
     }
-    .forgottenPasswordInputs{
+    .forgottenPasswordInputs {
         width: 46%;
     }
-    #wrappSection{
+    #wrappSection {
         height: 45%;
+    }
+}
+/*for mobile */
+
+@media only screen and (max-device-width: 375px) {
+    .account {
+        width: 100%;
+        margin-right: 15%;
+    }
+    .vetImg img {
+        width: 45%;
+        right: 31%;
+        top: 27%;
+    }
+    #logo {
+        margin-left: 10%;
+    }
+    .mainMenu .menu1 li {
+        width: 40%;
+    }
+    .smallOverlay {
+        min-height: 113px;
+    }
+    .smallOverlay .overlayText {
+        line-height: 100%;
+    }
+    .subMenuImg {
+        width: 29%;
+        height: 70%;
+    }
+    #wrappSection .subMenuImg a>span {
+        line-height: 120%;
+        font-size: 60%;
+    }
+    .footer .socialWrapper {
+        width: 89%;
+    }
+    .copyRight {
+        font-size: 72%;
+    }
+    .footer .social {
+        margin-bottom: 3%;
+    }
+    #arrow {
+        width: 38px;
+        height: 38px;
+    }
+    #loginForm {
+        width: 74%;
+        height: 43%;
+        left: 14%;
+        top: 40%;
+        font-size: 4vw;
+    }
+    #loginForm img {
+        width: 37%;
+        margin-top: 29%;
+        margin-right: 3%;
+    }
+    .loginUserName,
+    .loginPassword,
+    .forgottenPassword,
+    .registerUserName,
+    .registerInputs,
+    .registerPassword,
+    .registerEmail,
+    .forgottenPasswordInputs {
+        margin-left: 7%;
+    }
+    .loginInputs,
+    .registerInputs {
+        width: 50%;
+        margin: 6% 0px 0 4%;
+    }
+    #loginForm a {
+        margin: 15px 0 6px 5%;
+    }
+    .loginSubmit,
+    .registerSubmit,
+    .forgottenPasswordSubmit {
+        width: 22%;
+        margin-left: 9%;
+    }
+    #registerForm {
+        width: 77%;
+        height: 87%;
+        left: 12%;
+        font-size: 4vw;
+        top: 28%;
+    }
+    form>h4 {
+        margin-left: 4%;
+    }
+    #forgottenPasswordForm {
+        top: 48%;
+        height: 30%;
+        font-size: 4vw;
+    }
+    #forgottenPasswordForm img {
+        width: 30%;
+        margin-top: 13%;
+    }
+    .section .ad {
+        width: 89%;
     }
 }

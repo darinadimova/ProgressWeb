@@ -1,47 +1,43 @@
 @import url(https://fonts.googleapis.com/css?family=Neucha);
-
-#events{
-	width: 100%;
-	background-color: white;
+#events {
+    width: 100%;
+    background-color: white;
 }
-
-.eventsSection{
-	width: 98%;
-	margin-left: 2%;
-	padding-bottom: 3%;
+.eventsSection {
+    width: 98%;
+    margin-left: 2%;
+    padding-bottom: 3%;
 }
-
-.eventsSection p{
-	font-family: 'Neucha', cursive;
+.eventsSection p {
+    font-family: 'Neucha', cursive;
 }
-
-.eventMap{
-	width: 40%;
-	height: 100%;
-	display: none;
+.eventMap {
+    width: 40%;
+    height: 100%;
+    display: none;
 }
-
-iframe{
-	width: 100%;
-	height: 400px;
+iframe {
+    width: 100%;
+    height: 400px;
 }
-
-hr{
-	margin-top: 2%;
-	border-color: rgb(249,195,87);
+hr {
+    margin-top: 2%;
+    border-color: rgb(249, 195, 87);
 }
-
-.fa.fa-location-arrow{
-	cursor: pointer;
+.fa.fa-location-arrow {
+    cursor: pointer;
 }
-
-.fa.fa-anchor+a{
-	font-family: 'Neucha', cursive;
-	color: black;
+.fa.fa-anchor+a {
+    font-family: 'Neucha', cursive;
+    color: black;
 }
-
-@media only screen and (max-width: 1024px){
-    .eventMap{
+@media only screen and (max-width: 1024px) {
+    .eventMap {
         width: 70%;
+    }
+}
+@media only screen and (max-device-width: 375px) {
+    .eventMap {
+        width: 95%;
     }
 }

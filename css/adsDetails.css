@@ -1,139 +1,127 @@
 @import url(https://fonts.googleapis.com/css?family=Neucha);
-#adsWrapper{
-  width: 100%;
-  background-color: white;
+#adsWrapper {
+    width: 100%;
+    background-color: white;
 }
-
-#imgContainer{
-  float: left;
-  width: 55%;
-  margin-left: 6%;
-  margin-bottom: 5%;
+#imgContainer {
+    float: left;
+    width: 55%;
+    margin-left: 6%;
+    margin-bottom: 5%;
 }
-
-.mainImage img{
- width: 100%;
- height: auto;
+.mainImage img {
+    width: 100%;
+    height: auto;
 }
-
-#imgContainer .smallImgs{
-  width:17%;
-  float:left;
-  margin-right: 4%;
+#imgContainer .smallImgs {
+    width: 17%;
+    float: left;
+    margin-right: 4%;
 }
-#imgContainer .smallImgs img{
-  width:100%;
-  height: auto;
-  cursor:pointer;
+#imgContainer .smallImgs img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
 }
-
-#nameOfArticle{
-  float: left;
-  width: 100%;
-  margin-left: 9%;
-  font-family: 'Neucha', cursive;
-  
+#nameOfArticle {
+    float: left;
+    width: 100%;
+    margin-left: 9%;
+    font-family: 'Neucha', cursive;
 }
-
-.generalDetails{
-  float: right;
-  width: 30%;
-  height: auto;
-  margin-bottom: 1%;  
-  background-color: purple;
-  font-family: 'Neucha', cursive;
-  padding: 1%;
+.generalDetails {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin-bottom: 1%;
+    background-color: purple;
+    font-family: 'Neucha', cursive;
+    padding: 1%;
 }
-
-.traits p{
-  margin: 0;
+.traits p {
+    margin: 0;
 }
-
-#additionalInfo{
-  width: 100%;
-  border-top: 2px solid purple;
-  font-family: 'Neucha', cursive;
-  text-align: left;
-  font-weight: normal;
-  font-size: 1em;
+#additionalInfo {
+    width: 100%;
+    border-top: 2px solid purple;
+    font-family: 'Neucha', cursive;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1em;
 }
-
-#additionalInfo p{
-  padding: 1% 6% 0 6%;
+#additionalInfo p {
+    padding: 1% 6% 0 6%;
 }
-
-#additionalInfo p:nth-child(3){
-  padding-bottom: 6%;
+#additionalInfo p:nth-child(3) {
+    padding-bottom: 6%;
 }
-
-.owner{
-  background-color: rgba(249,195,87,0.8);
+.owner {
+    background-color: rgba(249, 195, 87, 0.8);
 }
-
-.socialMedia{
-  background-color: rgba(91,53,100,0.7);
+.socialMedia {
+    background-color: rgba(91, 53, 100, 0.7);
 }
-
-.traits{
-  background-color: rgba(98,177,192,0.8);
+.traits {
+    background-color: rgba(98, 177, 192, 0.8);
 }
-.socialWrapper2{
-  padding-right:22%;
-  margin-top:5%;
+.socialWrapper2 {
+    padding-right: 22%;
+    margin-top: 5%;
 }
-.socialWrapper2 .social{
-  float: right; 
-  margin-right: 20%;
+.socialWrapper2 .social {
+    float: right;
+    margin-right: 20%;
 }
-
-.socialWrapper2 .social.facebook2{
+.socialWrapper2 .social.facebook2 {
     background: url(../images/blackwhiteicons.png) -11px 46px;
     width: 34px;
     height: 34px;
     border-radius: 25px;
 }
-
-.socialWrapper2 .social.twitter2{
-    background:url(../images/blackwhiteicons.png) -56px 46px;
+.socialWrapper2 .social.twitter2 {
+    background: url(../images/blackwhiteicons.png) -56px 46px;
     width: 34px;
     height: 34px;
     border-radius: 25px;
 }
-
-.socialWrapper2 .social.instagram2{
-    background:url(../images/blackwhiteicons.png) -101px 46px;
+.socialWrapper2 .social.instagram2 {
+    background: url(../images/blackwhiteicons.png) -101px 46px;
     width: 34px;
     height: 34px;
     border-radius: 25px;
 }
-
-.socialWrapper2 .social.facebook2:hover{
+.socialWrapper2 .social.facebook2:hover {
     background: url(../images/blackwhiteicons.png) -12px 90px;
     width: 33px;
     height: 33px;
     border-radius: 24px;
 }
-
-.socialWrapper2 .social.twitter2:hover{
+.socialWrapper2 .social.twitter2:hover {
     background: url(../images/blackwhiteicons.png) -57px 90px;
     width: 33px;
     height: 33px;
     border-radius: 24px;
 }
-
-.socialWrapper2 .social.instagram2:hover{
+.socialWrapper2 .social.instagram2:hover {
     background: url(../images/blackwhiteicons.png) 45px 90px;
     width: 33px;
     height: 33px;
     border-radius: 24px;
 }
-
-@media only screen and (max-width: 1024px){
-    .socialWrapper2{
+@media only screen and (max-width: 1024px) {
+    .socialWrapper2 {
         margin-right: 0;
         padding-right: 7%;
     }
-    .socialWrapper2 .social{
-      margin-right: 12%;
+    .socialWrapper2 .social {
+        margin-right: 12%;
+    }
+}
+@media only screen and (max-device-width: 375px) {
+    #imgContainer {
+        width: 90%;
+    }
+    .generalDetails {
+        width: 92%;
     }
 }

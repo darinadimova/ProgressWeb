@@ -1,52 +1,54 @@
 @import url(https://fonts.googleapis.com/css?family=Neucha);
-
-#suportUs{
-	width: 100%;
-	background-color: white;
+#suportUs {
+    width: 100%;
+    background-color: white;
 }
-
-.supportUsInfo{
-	width: 100%;
-	margin-left: 2%;
+.supportUsInfo {
+    width: 100%;
+    margin-left: 2%;
 }
-
-.supportUsInfo h2{
-	font-family: 'Neucha', cursive;
-	font-weight: normal;
+.supportUsInfo h2 {
+    font-family: 'Neucha', cursive;
+    font-weight: normal;
 }
-
-.supportUsInfo p{
-	font-family: 'Neucha', cursive;
-	font-size: 1em;
+.supportUsInfo p {
+    font-family: 'Neucha', cursive;
+    font-size: 1em;
 }
-
-.piggyBankImg{
-	float: left;
-	width: 20%;
+.piggyBankImg {
+    float: left;
+    width: 20%;
 }
-
-.donationInfo span{
-	float: left;
-	width: 60%;
-	font-size: 1em;
-	font-family: arial;
-	font-weight: bold;
+.donationInfo span {
+    float: left;
+    width: 60%;
+    font-size: 1em;
+    font-family: arial;
+    font-weight: bold;
 }
-
-.donationInfo{
-	float: left;
-	width: 60%;
-	margin-left: 3%;
-	padding: 1%;
-	background-color:rgba(255, 195, 87, 0.88);
-	border-radius: 10px;
+.donationInfo {
+    float: left;
+    width: 60%;
+    margin-left: 3%;
+    padding: 1%;
+    background-color: rgba(255, 195, 87, 0.88);
+    border-radius: 10px;
 }
-
-.footer{
-	margin-top: 6%;
+.footer {
+    margin-top: 6%;
 }
-
-@media only screen and (max-width: 1024px){
-    #suportUs{
+@media only screen and (max-width: 1024px) {
+    #suportUs {
         background-color: white;
     }
+}
+@media only screen and (max-device-width: 375px) {
+    #supportUs {
+        background-color: white;
+    }
+    .donationInfo,
+    .donation img {
+        width: 90%;
+        float: none;
+    }
+}
