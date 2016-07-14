@@ -5,13 +5,14 @@
     </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+    </script>
     <script type="text/javascript" src="javascript/main.js">
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="icon" type="image/jpg" href="images/tabicon.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/questions.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/adsDetails.css">
   </head>
   <body>
     <div id="overlay" onclick="hideForm()">
@@ -138,7 +139,7 @@
               </a>
             </li>
             <li>
-              <a href="#">Въпроси
+              <a href="questions.html">Въпроси
               </a>
             </li>
             <li>
@@ -155,70 +156,75 @@
         <div class="clear">
         </div>
       </div>
-      <div id="questions">
-        <div class="questionWrapper">
-          <h2>ЧЕСТО ЗАДАВАНИ ВЪПРОСИ
-          </h2>
-          <h4>
-            <i class="fa fa-question-circle-o" aria-hidden="true">
-            </i> КОИ СТЕ ВИЕ?
-          </h4>
-          <p>
-            <i class="fa fa-paw" aria-hidden="true">
-            </i> Ние сме  група от отдадени и отговорни хора, които  помагат на бездомни животни. В основата на всичко стои Сдружение Домашни Лапички / Home Paws и няколко души, които задвижиха всичко. След това дойдоха и доброволците, дарителите и съмишлениците за каузата. Всички те са част от нашия малък екип, обичащ животните. В момента дейността ни обединява около 40 доброволеца за каузата и около 10 приемни дома, с които работим. Намираме се в гр.София .
-          </p>
-          <h4>
-            <i class="fa fa-question-circle-o" aria-hidden="true">
-            </i> КАКВА Е ВАШАТА ДЕЙНОСТ?
-          </h4>
-          <p>
-            <i class="fa fa-paw" aria-hidden="true">
-            </i> Бездомните животни, които прибираме, се настаняват в приемни домове (ако има свободни такива) докато бъдат излекувани, социализирани и готови за осиновяване.Търсим дарения, за покриването на сметките им.Спасените кучета и котки се дават кастрирани, изкъпани и обезпаразитени на осиновителите, след обстоен разговор с около 15 осиновителски въпроса, за да се уверим, че животните ще попаднат в добри ръце. След избора на най-добрите за тях осиновители (спрямо характера и особеностите на животното), се подписва осиновителски договор с тях и след няколко седмици се правят проверки на място в дома, където е осиновено животното, за да се уверим, че то е добре.
-          </p>
-          <h4>
-            <i class="fa fa-question-circle-o" aria-hidden="true">
-            </i> КАК СЕ ФИНАНСИРАТЕ?
-          </h4>
-          <p>
-            <i class="fa fa-paw" aria-hidden="true">
-            </i> Финансираме се от частни или корпоративни дарения – почти изцяло само от България. Щастливи сме, че има толкова много хора, които ни вярват и помагат. Благодарни сме на всички свои дарители – повечето от тях с малки суми, но редовно. 
-          </p>
-          <h4>ЗА КАКВО СЕ ИЗПОЛЗВАТ ДАРЕНИЯТА?
-          </h4>
-          <p>
-            <i class="fa fa-paw" aria-hidden="true">
-            </i> Набраните средства от дарения  се използват за прегледи при ветеринар, транспорт, лечение на бездомни животни, кастрации, ваксинации, храна, консумативи. Приемаме с радост и дарения във вид на храна за животните или други потребни материали!БЛАГОДАРИМ ВИ ОТ ВСЕ СЪРЦЕ, ЧЕ ВИ ИМА - ВСИЧКИ ВАС, КОИТО ИСКАТЕ ДА ПОМАГАТЕ ЗА КАУЗАТА!!!  БЕЗ ВАШАТА ПОМОЩ ТРУДНО БИХМЕ СЕ СПРАВИЛИ.
-          </p>
-          <h4>
-            <i class="fa fa-question-circle-o" aria-hidden="true">
-            </i> КАКВА Е ПРОЦЕДУРАТА И КАК НАСЪРЧАВАТЕ ОСИНОВЯВАНИЯТА?
-          </h4>
-          <p>
-            <i class="fa fa-paw" aria-hidden="true">
-            </i> Осиновяването е безплатно. Животинките си отиват у дома обезпаразитени, ваксинирани и ЕС паспорт. Всички наши животни се дават кастрирани, освен ако състоянието/възрастта им не го позволява.Кандидатите могат да се свържат с нас на телефон 0883 416 477 или електронна поща homepaws@gmail.com, като биват интервюирани по телефона, а при възможност запознати предварително с кучето или котето. При одобрение от наша страна между фондацията и осиновителите се сключва договор, в който „Домашни Лапички“ се задължава да оказва помощ при възникнали проблеми с осиновеното животно, както и да го прибере обратно при невъзможност на осиновителите да полагат по-нататъшни адекватни грижи към домашния си любимец.
-          </p>
-          <hr>
-          <h2>ТУК МОЖЕ ДА ЗАДАДЕТЕ АКО ИМАТЕ НЯКЪКВИ ВЪПРОСИ КЪМ НАС : 
-            <i class="fa fa-smile-o" aria-hidden="true">
-            </i>
-          </h2>
-          <div class="commentArea">
-            <form action="#" method="POST" id="textForm">
-              <label for="email">Моля въведете вашия email адрес: 
-              </label>
-              <input type="email" required class="emailAddress">
-              <textarea name="messages" id="coments" maxlength="1000" placeholder="Задайте Вашия въпрос тук...">
-              </textarea>
-              <input type="Submit" value="Изпрати" class="formSubmitButton">
-              <div class="clear">
-              </div>
-            </form>
+      <div id="adsWrapper">
+        <h2 id="nameOfArticle">Моето име е: Белла
+        </h2>
+        <div id="imgContainer">
+          <div class="mainImage">
+            <img src="images/Bella.jpg" alt="Smiley face">
+          </div>
+          <div class="clear">
+          </div>
+          <div class="smallImgs">
+            <img src="images/Bella2.jpg" alt="img1">
+          </div>
+          <div class="smallImgs">
+            <img src="images/Bella3.jpg" alt="img2">
+          </div>
+          <div class="smallImgs">
+            <img src="images/Bella4.jpg" alt="img3">
+          </div>
+          <div class="clear">
           </div>
         </div>
-      </div>
-      <div class="clear">
+        <div class="generalDetails owner">В момента за мен се грижи:
+          <p> Анастасия Иванова която е временен приемен стопанин.
+          </p>
+        </div>
+        <div class="generalDetails socialMedia">Сподели ме със социалните медии:
+          <div class="socialWrapper2">
+            <a href="#">
+              <span class="social instagram2">
+              </span>
+            </a>
+            <a href="#">
+              <span class="social twitter2">
+              </span>
+            </a>
+            <a href="#">
+              <span class="social facebook2">
+              </span>
+            </a>
+            <div class="clear">
+            </div>
+          </div>
+        </div>
+        <div class="generalDetails traits">Основни характеристики:
+          <p>Порода: прилича на Персииче
+          </p>
+          <p>Пол: женска
+          </p>
+          <p>Възраст: 2 месеца
+          </p>
+          <p>Шарка: Бяло с черно носле
+          </p>
+          <p>Ваксинирана и с хигиенни навици
+          </p>
+        </div>
+        <div class="clear">
+        </div>
+        <div id="additionalInfo">
+          <p>Белла е прекрасна , бяла и пухкава като сняг.Тя търси своя постоянен дом в който ще я обичат и обгрижват.
+          </p>
+          <p>Намерена на улицата гладна и плаха,Белла бе прибрана от нас.Погрижихме се да бъде окапана и обезпаразитена.Има хигиенни навици.Тя е готова да бъде осиновена от добри и грижовни хора.
+          </p>
+          <p>Това малко бяло съкровище е много игриво и социално.Търси вниманието на малки и големи.
+          </p>
+        </div>
       </div>
       <!-- FOOTER GOES HERE -->
+      <div class="clear">
+      </div>
       <div class="footer">
         <div class="socialWrapper">
           <p class="copyRight">Home Paws Organization © 2016 | All Rights Reserved

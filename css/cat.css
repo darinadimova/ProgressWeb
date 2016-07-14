@@ -25,16 +25,18 @@
     border: 1px solid black;
 }
 .imgAd {
-    float: right;
-    margin-left: 15px;
+    margin-left: 52px;
     max-width: 70%;
 }
 .textAd {
-    text-align: justify;
     margin-left: 10px;
+    float: left;
 }
 .headerAd {
     width: 100%;
+}
+.headerAd h2{
+    margin-left: 40%;
 }
 .adFooter {
     float: right;
