@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Домашни Лапички
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="javascript/main.js">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="icon" type="image/jpg" href="images/tabicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/adsDetails.css">
+  </head>
+  <body>
+    <div id="overlay" onclick="hideForm()">
+    </div>
+    <div id="arrow">
+      <a href="#">
+      </a>
+    </div>
+    <div id="wrapper">
+      <div id="header">
+        <div id="logo">
+          <a href="index.html">
+            <img src="images/mainlogo.jpg" alt="Logo">
+          </a>
+        </div>
+        <div class="account">
+          <a href="#" onclick="registerShow()">Register
+          </a>
+          <a href="#" onclick="loginShow()">Login
+          </a>
+          <!-- LOGIN FORM GOES HERE -->
+          <div id="loginForm">
+            <span onclick="hideForm()">X
+            </span>
+            <form action="#" method="POST">
+              <img class="layCat" alt="laycat" src="images/laycat.png">
+              <p class="accountHeader">
+                <span>Влезте с профила си
+                </span>
+              </p>
+              <label for="nameOfUser" class="loginUserName">Потребителско име:
+              </label>
+              <input type="text" id="nameOfUser" name="nameOfUser" class="loginInputs" placeholder="Вашето име" required>
+              <label for="loginPassword" class="loginPassword">Парола:
+              </label>
+              <input type="password" id="loginPassword" name="password" class="loginInputs" placeholder="Вашата парола" required>
+              <a href="#" onclick="forgottenPasswordShow()"> Забравили сте паралота си?
+              </a>
+              <input type="Submit" class="loginSubmit" value="Влез">
+              <div class="clear">
+              </div>
+            </form>
+          </div>
+          <!-- LOGIN FORM ENDS HERE -->
+          <!-- REGISTER FORM GOES HERE -->
+          <div id="registerForm">
+            <span onclick="hideForm()">X
+            </span>
+            <form action="#" method="POST">
+              <img class="layCat" alt="laycat" src="images/laycat.png">
+              <p class="accountHeader">
+                <span>Регистрация
+                </span>
+              </p>
+              <h4>Въведете Име и Фамилия
+              </h4>
+              <label for="username" class="registerUserName">Име:
+              </label>
+              <input type="text" class="loginUserName registerInputs" id="username" name="username" placeholder="Въведете Вашето име" required>
+              <label for="surname" class="loginUserName">Фамилия:
+              </label>
+              <input type="text" class="loginUserName registerInputs" id="surname" name="surname" placeholder="Въведете Вашата Фамилия" required>
+              <h4>
+                <span>Въведете емайл и парола
+                </span>
+              </h4>
+              <label for="email" class="registerEmail">Емайл адрес:
+              </label>
+              <input type="email" id="email" name="email" placeholder="Въведете емайл" class="registerInputs" required>
+              <label for="emailAddress" class="registerConfirmEmail">
+              </label>
+              <input type="email" placeholder="Потвърдете емайл" id="emailAddress" class="registerInputs" required>
+              <label for="keyword" class="registerPassword">Парола:
+              </label>
+              <input class="registerInputs" id="keyword" name="password" type="password" placeholder="Въведете парола" required>
+              <label for="registerPassword" class="registerPassword">
+              </label>
+              <input type="password" id="registerPassword" name="password" class="registerInputs" placeholder="Потвърдете Вашата парола" required>
+              <input type="Submit" class="registerSubmit" value="Влез">
+            </form>
+          </div>
+          <!-- REGISTER FORM ENDS HERE -->
+          <div class="clear">
+          </div>
+          <!-- FORGOTTEN PASSWORD FORM GOES HERE -->
+          <div id="forgottenPasswordForm">
+            <span onclick="hideForm()">X
+            </span>
+            <form action="#" method="POST">
+              <img class="layCat" alt="layingcat" src="images/laycat.png">
+              <p class="accountHeader">
+                <span>Забравенa парола
+                </span>
+              </p>
+              <label for="forgottenPassword" class="forgottenPassword">Въведете Емайл адрес:
+              </label>
+              <input type="email" id="forgottenPassword" class="forgottenPasswordInputs" name="forgottenPassword" placeholder="Въведете емайл адрес" required>
+              <input type="Submit" class="forgottenPasswordSubmit" value="Изпрати" onsubmit="msgSend()">
+            </form>
+          </div>
+          <!-- FORGOTTEN PASSWORD ENDS HERE -->
+        </div>
+        <div class="search">
+          <form method="POST" action="#">
+            <input type="search" class="searchInput" placeholder="Ключова дума..." required>
+            <button class="submitButton">Търси
+            </button>
+          </form>
+        </div>
+        <div class="vetImg">
+          <img src="images/dobrohrumvane.jpg" alt="dobrohrumvane">
+        </div>
+        <!-- MAIN MENU GOES HERE -->
+        <div class="mainMenu">
+          <hr class="hr">
+          <ul class="menu1">
+            <li>
+              <a href="index.html">Начало
+              </a>
+            </li>
+            <li class="cat">
+              <a href="cat.html">Котета
+              </a>
+            </li>
+            <li class="dog">
+              <a href="dog.html">Кучета
+              </a>
+            </li>
+            <li>
+              <a href="questions.html">Въпроси
+              </a>
+            </li>
+            <li>
+              <a href="forUs.html">За Нас
+              </a>
+            </li>
+            <li>
+              <a href="supportUs.html">Подкрепа
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- MAIN MENU ENDS HERE -->
+        <div class="clear">
+        </div>
+      </div>
+      <div id="adsWrapper">
+        <h2 id="nameOfArticle">Моето име е: Моли
+        </h2>
+        <div id="imgContainer">
+          <div class="mainImage">
+            <img src="images/Molly.jpg" alt="Smiley face">
+          </div>
+          <div class="clear">
+          </div>
+          <div class="smallImgs">
+            <img src="images/Molly.jpg" alt="img1">
+          </div>
+          <div class="smallImgs">
+            <img src="images/Molly1.jpg" alt="img2">
+          </div>
+          <div class="smallImgs">
+            <img src="images/Molly2.jpg" alt="img3">
+          </div>
+          <div class="clear">
+          </div>
+        </div>
+        <div class="generalDetails owner">В момента за мен се грижи:
+          <p> семейство Лора и Нина Христови който са мой временен приемен стопанин.
+          </p>
+        </div>
+        <div class="generalDetails socialMedia">Сподели ме със социалните медии:
+          <div class="socialWrapper2">
+            <a href="#">
+              <span class="social instagram2">
+              </span>
+            </a>
+            <a href="#">
+              <span class="social twitter2">
+              </span>
+            </a>
+            <a href="#">
+              <span class="social facebook2">
+              </span>
+            </a>
+            <div class="clear">
+            </div>
+          </div>
+        </div>
+        <div class="generalDetails traits">Основни характеристики:
+          <p>Порода: -
+          </p>
+          <p>Пол: женска
+          </p>
+          <p>Възраст: 4.5 месеца
+          </p>
+          <p>Шарка: Черна
+          </p>
+          <p>Ваксинирана
+          </p>
+        </div>
+        <div class="clear">
+        </div>
+        <div id="additionalInfo">
+          <p>Моли и кученцето за което сте мечтали.Тя е весела,игрива и много социална.Обича малки и големи и винаги е в центъра на събитията.
+          </p>
+          <p>Моли беше открита пред един малък квартален магазин,където е била забелязвана от минувачи.Хората,който са работили в магазина са я хранели,но потърсиха нашата помощ тъй като това не може да продължава дълго.Търсим топъл и уютен дом за тази малка принцеса.
+          </p>
+          <p>Моли е изключително блага по характер.Има нужда от постоянна подкрепа.
+          </p>
+        </div>
+      </div>
+      <!-- FOOTER GOES HERE -->
+      <div class="clear">
+      </div>
+      <div class="footer">
+        <div class="socialWrapper">
+          <p class="copyRight">Home Paws Organization © 2016 | All Rights Reserved
+          </p>
+          <a href="#">
+            <span class="social youtube">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social pinterest">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social instagram">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social google">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social twitter">
+            </span>
+          </a>
+          <a href="#">
+            <span class="social fb">
+            </span>
+          </a>
+          <div class="clear">
+          </div>
+        </div>
+        <div class="clear">
+        </div>
+      </div>
+      <!-- FOOTER ENDS HERE -->
+    </div>
+  </body>
+</html>
