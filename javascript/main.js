@@ -14,8 +14,31 @@ if (typeof $!="undefined"){
                 $(window).scrollTop($(document).height());
             });
         });
+        
+        resizer(335,235,400,400);
     });
 }
+
+
+var imgs = document.getElementsByClassName('imgAd');
+window.onload = function () { 
+    for(i=0; i<imgs.length; i++){
+        var newSize=resizer(800,300,imgs[i].clientWidth,imgs[i].clientHeight);
+        imgs[i].style.width=newSize[0]+"px";
+        imgs[i].style.height=newSize[1]+"px";
+        var newSize2=resizer(275,200,imgs[i].clientWidth,imgs[i].clientHeight);
+        imgs[i].style.width=newSize2[0]+"px";
+        imgs[i].style.height=newSize2[1]+"px";
+      }
+        var mainImage=document.getElementsByClassName("mainImage")[0].childNodes[1];
+        var newSize=resizer(800,300,mainImage.clientWidth,mainImage.clientHeight);
+        mainImage.style.width=newSize[0]+"px";
+        mainImage.style.height=newSize[1]+"px";
+        var newSize2=resizer(600,500,mainImage.clientWidth,mainImage.clientHeight);
+        mainImage.style.width=newSize2[0]+"px";
+        mainImage.style.height=newSize2[1]+"px";
+}
+    
 
 function loginShow() {
     document.getElementById('registerForm').style.display = "none";
@@ -59,3 +82,17 @@ document.addEventListener("scroll", function() {
     }
 });
 
+function resizer(maxW, maxH, currW, currH){
+
+    var rw = currW/maxW;
+    var rh = currH/maxH;
+
+    if(rw >= rh){
+        currW = maxW;
+        currH = Math.round(currH/rw);
+    }else{
+        currH =maxH;
+        currW = Math.round(currW/rh);
+    }
+    return [currW, currH];
+}

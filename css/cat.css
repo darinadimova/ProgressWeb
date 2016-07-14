@@ -20,12 +20,13 @@
 .ad {
     float: left;
     width: 31%;
+    height: 375px;
     margin: 10px 10px 10px 14px;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid black;
 }
 .imgAd {
-    margin-left: 52px;
+    margin-left: 115px;
     max-width: 70%;
 }
 .textAd {
@@ -92,6 +93,7 @@
 @media only screen and (max-width: 1024px) {
     .ad {
         width: 44%;
+        height: 415px;
         float: left;
     }
 }
