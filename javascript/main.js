@@ -22,6 +22,7 @@ if (typeof $!="undefined"){
 
 var imgs = document.getElementsByClassName('imgAd');
 window.onload = function () { 
+    if(!('ontouchstart' in window)){
     for(i=0; i<imgs.length; i++){
         var newSize=resizer(800,300,imgs[i].clientWidth,imgs[i].clientHeight);
         imgs[i].style.width=newSize[0]+"px";
@@ -30,6 +31,8 @@ window.onload = function () {
         imgs[i].style.width=newSize2[0]+"px";
         imgs[i].style.height=newSize2[1]+"px";
       }
+  }
+    if(document.getElementById("nameOfArticle")!=null && !('ontouchstart' in window)){
         var mainImage=document.getElementsByClassName("mainImage")[0].childNodes[1];
         var newSize=resizer(800,300,mainImage.clientWidth,mainImage.clientHeight);
         mainImage.style.width=newSize[0]+"px";
@@ -37,8 +40,10 @@ window.onload = function () {
         var newSize2=resizer(600,500,mainImage.clientWidth,mainImage.clientHeight);
         mainImage.style.width=newSize2[0]+"px";
         mainImage.style.height=newSize2[1]+"px";
+    }
 }
     
+
 
 function loginShow() {
     document.getElementById('registerForm').style.display = "none";
@@ -96,3 +101,15 @@ function resizer(maxW, maxH, currW, currH){
     }
     return [currW, currH];
 }
+
+
+$( document ).ready(function() {
+    var select= $(".section .ad p");
+    for(i=0; i<select.length; i++){
+        var p=select[i].innerHTML.length;
+        if(p>114){
+            var newSelect= select[i].innerHTML.substring(0,114)+'...';
+            select[i].innerHTML=newSelect;
+        }
+    }
+});
