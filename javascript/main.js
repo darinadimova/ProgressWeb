@@ -37,7 +37,7 @@ window.onload = function () {
         var newSize=resizer(800,300,mainImage.clientWidth,mainImage.clientHeight);
         mainImage.style.width=newSize[0]+"px";
         mainImage.style.height=newSize[1]+"px";
-        var newSize2=resizer(600,500,mainImage.clientWidth,mainImage.clientHeight);
+        var newSize2=resizer(460,500,mainImage.clientWidth,mainImage.clientHeight);
         mainImage.style.width=newSize2[0]+"px";
         mainImage.style.height=newSize2[1]+"px";
     }
